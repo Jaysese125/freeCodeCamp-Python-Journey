@@ -7,7 +7,8 @@
 * **Versatility:** Used for everything from simple automation scripts to large-scale, industrial-level applications.
 
 ### Key Industry Fields & Tools
-* 📊 **Data Science & Machine Learning:** * *Data Analysis:* **Pandas** and **NumPy** make data analysis less tedious.
+* 📊 **Data Science & Machine Learning:**
+  * *Data Analysis:* **Pandas** and **NumPy** make data analysis less tedious.
   * *AI/Machine Learning:* **TensorFlow** and **Scikit-learn** make AI models highly accessible.
 * 🌐 **Web Development (Back-End Systems):**
   * Frameworks like **Django**, **FastAPI**, and **Flask** allow developers to build secure, scalable backends with minimal effort (used by Instagram and Pinterest).
@@ -46,4 +47,11 @@
   ```python
   # This is a
   # multi-line comment
-* Rule of Thumb: Use comments to explain complex logic, never to explain what a poorly named variable means. Fix the variable name instead!
+* **Rule of Thumb** Use comments to explain complex logic, never to explain what a poorly named variable means. Fix the variable name instead!
+
+###🖨️ How the print() Function Works
+* **Purpose:** A built-in function used to output data directly to the terminal console stream.
+* **Strings:** Text arguments must be wrapped in matching quotation marks (either single ' or double ") so Python knows it is a string data type, not a variable name.
+* **Multiple Arguments:** You can pass multiple values to a single print() execution by separating them with commas.
+* **Behavior:** Python automatically inserts a single empty space ( ) between each item when combining them onto the same line.
+* **Example:** print('Hello', 'world!') outputs Hello world!
