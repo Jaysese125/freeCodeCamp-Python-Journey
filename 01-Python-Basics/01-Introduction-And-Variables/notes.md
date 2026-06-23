@@ -21,3 +21,29 @@
   * Tools like **Selenium** and **BeautifulSoup** allow users to scrape public data and automate repetitive browser or file tasks.
 
 ---
+
+## 🛠️ Module 2: Understanding Variables and Data Types
+
+### 📦 Variable Declaration
+* Python variables act as **labeled boxes** for storing data references.
+* **Syntax:** `variable_name = value` (No keywords like `let`, `const`, or `var` are used).
+* **Example:** `age = 25`
+
+### 🛑 Strict Variable Naming Rules (Breaking these causes a `SyntaxError`)
+1. Must start **only** with a letter or an underscore (`_`). It **cannot** start with a number (e.g., `5variable` is illegal).
+2. Can only contain alphanumeric characters (`a-z`, `A-Z`, `0-9`) and underscores.
+3. Are strictly **case-sensitive** (`age`, `Age`, and `AGE` are three completely unique variables).
+4. Cannot be a Python **reserved keyword** (like `if`, `class`, or `def`).
+
+### 🐍 Naming Conventions (Best Practices)
+* **Snake Case:** Multi-word variables should be lowercase and separated by underscores (e.g., `my_variable_name`).
+* **Descriptive Names:** Always use intentional names instead of abbreviations (e.g., use `user_age = 30` instead of `ua = 30`).
+* **Avoid Single Letters:** Do not use names like `x = 56` because they fail to communicate the variable's purpose or meaning.
+
+### 💬 Code Comments
+* Comments start with a pound symbol (`#`). Python completely ignores everything after the `#` on that line.
+* Multi-line comments are built using consecutive lines of single comments:
+  ```python
+  # This is a
+  # multi-line comment
+* Rule of Thumb: Use comments to explain complex logic, never to explain what a poorly named variable means. Fix the variable name instead!
