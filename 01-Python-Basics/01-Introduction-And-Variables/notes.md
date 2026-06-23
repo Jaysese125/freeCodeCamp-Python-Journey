@@ -49,7 +49,7 @@
   # multi-line comment
 * **Rule of Thumb** Use comments to explain complex logic, never to explain what a poorly named variable means. Fix the variable name instead!
 
-###🖨️ How the print() Function Works
+### 🖨️ How the print() Function Works
 * **Purpose:** A built-in function used to output data directly to the terminal console stream.
 * **Strings:** Text arguments must be wrapped in matching quotation marks (either single ' or double ") so Python knows it is a string data type, not a variable name.
 * **Multiple Arguments:** You can pass multiple values to a single print() execution by separating them with commas.
