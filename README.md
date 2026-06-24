@@ -6,7 +6,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 
 ## 📊 Comprehensive Progress Dashboard
 
-* 🟦 **01. Python Basics:** `[▓▓░░░░░░░░░░░░░░░░░░]` 5/102 Steps
+* 🟦 **01. Python Basics:** `[▓▓▓░░░░░░░░░░░░░░░░░]` 10/102 Steps
 * ⬜ **02. Loops & Sequences:** `[░░░░░░░░░░░░░░░░░░░░]` 0/31 Steps
 * ⬜ **03. Dictionaries & Sets:** `[░░░░░░░░░░░░░░░░░░░░]` 0/50 Steps
 * ⬜ **04. Classes & Objects:** `[░░░░░░░░░░░░░░░░░░░░]` 0/71 Steps
@@ -25,7 +25,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 |:---|:---:|:---:|:---|
 | Introduction to Python | Theory | ✅ COMPLETED [2026-06-24] | `01-Introduction-And-Variables/notes.md` |
 | Understanding Variables & Data Types | Theory | ✅ COMPLETED [2026-06-24] | `01-Introduction-And-Variables/notes.md` |
-| **Build a Report Card Printer** | **Workshop** | ⏳ NOT STARTED | `report_card_printer.py` |
+| **Build a Report Card Printer** | **Workshop** | ✅ COMPLETED [2026-06-24] | `report_card_printer.py` |
 | Introduction to Strings | Theory | ⏳ NOT STARTED | `notes.md` |
 | **Build an Employee Profile Generator** | **Workshop** | ⏳ NOT STARTED | `employee_generator.py` |
 | Numbers & Mathematical Operations | Theory | ⏳ NOT STARTED | `notes.md` |
