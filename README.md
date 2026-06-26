@@ -6,7 +6,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 
 ## 📊 Comprehensive Progress Dashboard
 
-* 🟦 **01. Python Basics:** `[▓▓▓▓▓░░░░░░░░░░░░░░░]` 39/102 Steps
+* 🟦 **01. Python Basics:** `[▓▓▓▓▓▓▓▓░░░░░░░░░░░░]` 47/102 Steps
 * ⬜ **02. Loops & Sequences:** `[░░░░░░░░░░░░░░░░░░░░]` 0/31 Steps
 * ⬜ **03. Dictionaries & Sets:** `[░░░░░░░░░░░░░░░░░░░░]` 0/50 Steps
 * ⬜ **04. Classes & Objects:** `[░░░░░░░░░░░░░░░░░░░░]` 0/71 Steps
@@ -29,7 +29,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Introduction to Strings | Theory | ✅ COMPLETED [2026-06-24] | `01-Introduction-And-Variables/notes.md` |
 | **Build an Employee Profile Generator** | **Workshop** | ✅ COMPLETED [2026-06-25] | `employee_generator.py` |
 | Numbers & Mathematical Operations | Theory | ✅ COMPLETED [2026-06-26] | `01-Introduction-And-Variables/notes.md` |
-| **Build a Bill Splitter** | **Workshop** | ⏳ NOT STARTED | `bill_splitter.py` |
+| **Build a Bill Splitter** | **Workshop** | ✅ COMPLETED [2026-06-27] | `bill_splitter.py` |
 | Booleans and Conditionals | Theory | ⏳ NOT STARTED | `notes.md` |
 | **Build a Movie Ticket Booking Calculator**| **Workshop** | ⏳ NOT STARTED | `ticket_calculator.py` |
 | **Build a Travel Weather Planner** | **Lab** | ⏳ NOT STARTED | `weather_planner.py` |
