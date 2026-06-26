@@ -527,3 +527,182 @@ Because strings are immutable, every modification method returns a new string.
 * `type()` identifies an object's exact type.
 * `isinstance()` safely validates data types before operations.
 * Built-in string methods simplify text manipulation while preserving immutability.
+
+---
+
+## 🔢 Module 4: Numbers & Mathematical Operations
+
+### ⚖️ Core Numeric Data Types
+* **Integer (`int`):** Positive or negative whole numbers without decimal points (e.g., `-4`, `56`).
+* **Floating-Point (`float`):** Numbers containing explicit decimal indicators (e.g., `0.0`, `-12.0`, `3.14`).
+* **Implicit Float Casting:** Whenever an operation mixes an `int` and a `float`, Python automatically promotes the result to a `float`.
+  * *Example:* `56 + 5.4` $\rightarrow$ `61.4` (Type: `<class 'float'>`)
+
+### 🧮 Advanced Arithmetic Operators
+| Operator | Operation | Description / Behavior | Example |
+|:---:|:---|:---|:---|
+| `/` | **True Division** | Always outputs a float, even if the division is perfectly even. | `56 / 12` $\rightarrow$ `4.666...` |
+| `//` | **Floor Division**| Divides numbers and drops the fraction, returning the greatest integer less than or equal to the result. | `56 // 12` $\rightarrow$ `4`<br>`12.0 // 5.4` $\rightarrow$ `2.0` |
+| `%` | **Modulo** | Extracts the fractional arithmetic remainder left over after a division operation. | `56 % 12` $\rightarrow$ `8` |
+| `**` | **Exponentiation**| Raises the left operand to the power of the right operand. | `2 ** 3` $\rightarrow$ `8` |
+
+### ⚠️ Floating-Point Precision Constraints (Floating-Point Arithmetic)
+* **The Problem:** Operations like `0.1 + 0.2` output `0.30000000000000004` instead of an exact `0.3`.
+* **The Cause:** 
+  Computers process calculations using base-2 binary structures. Fractional values that cleanly divide in base-10 (like $1/10$ or $1/5$) turn into repeating, infinite fractions in binary, forcing a microscopic rounding adjustment.
+
+### 🔧 Native Conversion & Core Math Functions
+* `int(value)`: Truncates a float toward zero (drops the decimal point completely without rounding). Converts numeric text strings like `'45'` into integers.
+* `float(value)`: Appends `.0` to integers. Parses float-format strings like `'7.8'` into usable values.
+* `round(number, digits)`: Rounds to the nearest whole integer by default. If a precision argument is added, it limits trailing decimals (`round(4.253, 1)` $\rightarrow$ `4.3`).
+* `abs(number)`: Drops directional signage, delivering the absolute structural distance from zero (`abs(-15)` $\rightarrow$ `15`).
+* `pow(base, exp, mod)`: `pow(2, 3)` matches `2 ** 3`. Adding a third argument performs accelerated modular exponentiation: `pow(2, 3, 5)` $\rightarrow$ $(2^3) \pmod 5 = 3$.
+
+---
+
+# ⚡ Module 5: Augmented Assignment Syntax
+
+## 🧩 Structural Purpose
+
+* A syntactic shortcut that performs a calculation and assigns the result back to the original variable.
+* **Syntax conversion:**
+
+```python
+x += y
+```
+
+is equivalent to
+
+```python
+x = x + y
+```
+
+* **Benefit:** Reduces repetition, minimizes typing mistakes, and improves readability.
+
+---
+
+## 🎛️ Operator Reference Grid
+
+| Assignment | Equivalent       | Example (`x = 10`) |
+| ---------- | ---------------- | ------------------ |
+| `+=`       | `x = x + value`  | `x += 5` → `15`    |
+| `-=`       | `x = x - value`  | `x -= 3` → `7`     |
+| `*=`       | `x = x * value`  | `x *= 2` → `20`    |
+| `/=`       | `x = x / value`  | `x /= 4` → `2.5`   |
+| `//=`      | `x = x // value` | `x //= 3` → `3`    |
+| `%=`       | `x = x % value`  | `x %= 3` → `1`     |
+| `**=`      | `x = x ** value` | `x **= 2` → `100`  |
+
+---
+
+## 🧵 String Behavior Compatibility
+
+### Concatenation (`+=`)
+
+Extends a string by creating a new string object (strings are immutable).
+
+```python
+greeting = "Hello"
+greeting += " World"
+
+print(greeting)
+```
+
+Output:
+
+```text
+Hello World
+```
+
+### String Multiplication (`*=`)
+
+Repeats a string multiple times.
+
+```python
+greet = "Hi"
+greet *= 3
+
+print(greet)
+```
+
+Output:
+
+```text
+HiHiHi
+```
+
+Attempting to use other arithmetic assignment operators on strings (`-=`, `/=`, `//=`, etc.) raises a `TypeError`.
+
+---
+
+## 🛑 The `++` and `--` Myth in Python
+
+Unlike C, C++, Java, or JavaScript, Python **does not** support increment (`++`) or decrement (`--`) operators.
+
+The following code is invalid:
+
+```python
+x++
+```
+
+or
+
+```python
+x--
+```
+
+Python raises a **SyntaxError**.
+
+### Unary Plus Behavior
+
+Interestingly, multiple plus signs are legal syntax because Python interprets them as repeated unary positive operators.
+
+```python
+x = 5
+
+++x
++++x
+```
+
+Output:
+
+```text
+5
+5
+```
+
+The value **does not change**.
+
+### Correct Way to Increment
+
+```python
+x += 1
+```
+
+or
+
+```python
+x = x + 1
+```
+
+### Correct Way to Decrement
+
+```python
+x -= 1
+```
+
+or
+
+```python
+x = x - 1
+```
+
+---
+
+# 📌 Key Takeaways
+
+* Augmented assignment combines an operation and assignment into one statement.
+* Strings support only `+=` and `*=`.
+* Other augmented arithmetic operators are invalid for strings.
+* Python does **not** have `++` or `--` operators.
+* Use `+= 1` and `-= 1` to increment or decrement values.
