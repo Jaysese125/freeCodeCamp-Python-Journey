@@ -6,7 +6,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 
 ## 📊 Comprehensive Progress Dashboard
 
-* 🟦 **01. Python Basics:** `[▓▓▓▓▓▓▓▓░░░░░░░░░░░░]` 49/102 Steps
+* 🟦 **01. Python Basics:** `[▓▓▓▓▓▓▓▓░░░░░░░░░░░░]` 70/102 Steps
 * ⬜ **02. Loops & Sequences:** `[░░░░░░░░░░░░░░░░░░░░]` 0/31 Steps
 * ⬜ **03. Dictionaries & Sets:** `[░░░░░░░░░░░░░░░░░░░░]` 0/50 Steps
 * ⬜ **04. Classes & Objects:** `[░░░░░░░░░░░░░░░░░░░░]` 0/71 Steps
@@ -31,7 +31,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Numbers & Mathematical Operations | Theory | ✅ COMPLETED [2026-06-26] | `01-Introduction-And-Variables/notes.md` |
 | **Build a Bill Splitter** | **Workshop** | ✅ COMPLETED [2026-06-27] | `bill_splitter.py` |
 | Booleans and Conditionals | Theory | ✅ COMPLETED [2026-06-28] | `01-Introduction-And-Variables/notes.md` |
-| **Build a Movie Ticket Booking Calculator**| **Workshop** | ⏳ NOT STARTED | `ticket_calculator.py` |
+| **Build a Movie Ticket Booking Calculator**| **Workshop** | ✅ COMPLETED [2026-06-28] | `ticket_calculator.py` |
 | **Build a Travel Weather Planner** | **Lab** | ⏳ NOT STARTED | `weather_planner.py` |
 | Understanding Functions and Scope | Theory | ⏳ NOT STARTED | `notes.md` |
 | **Build an Apply Discount Function** | **Lab** | ⏳ NOT STARTED | `discount_function.py` |
