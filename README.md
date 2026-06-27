@@ -130,36 +130,6 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 
 ---
 
-## 🎯 Current Focus
-
-```text
-Current Module : Python Basics
-Current Progress: 37 / 102 Steps
-Next Lesson     : Numbers & Mathematical Operations
-```
-
-## 📁 Repository Structure
-
-```text
-freecodecamp-scientific-computing-python/
-│
-├── README.md
-│
-├── 01-Python-Basics/
-│   ├── 01-Introduction-And-Variables/
-│   │   └── notes.md
-│   ├── report_card_printer.py
-│   └── employee_generator.py
-│
-├── 02-Loops-And-Sequences/
-├── 03-Dictionaries-And-Sets/
-├── 04-Error-Handling/
-├── 05-Classes-And-Objects/
-├── 06-Object-Oriented-Programming/
-├── 07-Linear-Data-Structures-And-Algorithms/
-└── 08-Graphs-Trees-And-Dynamic-Programming/
-```
-
 ## 🏆 Certification Goal
 
 Complete all **531 lessons, labs, workshops, and certification projects** while maintaining engineering-grade documentation, study notes, and source code for every milestone.
