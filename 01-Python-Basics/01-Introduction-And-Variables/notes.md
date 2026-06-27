@@ -706,3 +706,270 @@ x = x - 1
 * Other augmented arithmetic operators are invalid for strings.
 * Python does **not** have `++` or `--` operators.
 * Use `+= 1` and `-= 1` to increment or decrement values.
+
+---
+
+# 🚦 Module 6: Booleans and Conditionals
+
+## 🎛️ Comparison Operators
+
+Comparison operators evaluate expressions and return a boolean value (`True` or `False`).
+
+| Operator | Name                  | Description                                                     | Example            |
+| :------: | :-------------------- | :-------------------------------------------------------------- | :----------------- |
+|   `==`   | Equal                 | Checks if two values are equal.                                 | `4 == 4` → `True`  |
+|   `!=`   | Not Equal             | Checks if two values are different.                             | `3 != 4` → `True`  |
+|    `>`   | Greater Than          | Checks if the left value is greater than the right.             | `3 > 4` → `False`  |
+|    `<`   | Less Than             | Checks if the left value is less than the right.                | `3 < 4` → `True`   |
+|   `>=`   | Greater Than or Equal | Checks if the left value is greater than or equal to the right. | `3 >= 4` → `False` |
+|   `<=`   | Less Than or Equal    | Checks if the left value is less than or equal to the right.    | `3 <= 4` → `True`  |
+
+---
+
+## 🔀 Conditional Control Structures (`if`, `elif`, `else`)
+
+Conditional statements determine which block of code executes based on whether a condition evaluates to `True` or `False`.
+
+### 📏 Indentation-Based Code Blocks
+
+Python uses **indentation** to define code blocks.
+
+* The standard indentation is **4 spaces**.
+* Incorrect indentation raises an `IndentationError`.
+
+### 🚧 The `pass` Statement
+
+`pass` is a placeholder that allows an empty code block.
+
+```python
+if True:
+    pass
+```
+
+This satisfies Python's syntax requirements without performing any action.
+
+### 📌 Structure Rules
+
+An `if`, `elif`, and `else` statement must appear together without unrelated statements between them.
+
+Incorrect:
+
+```python
+if age >= 18:
+    print("Adult")
+
+print("Hello")    # ❌ Breaks the conditional chain
+
+else:
+    print("Child")
+```
+
+Correct:
+
+```python
+if age >= 18:
+    print("Adult")
+elif age >= 13:
+    print("Teenager")
+else:
+    print("Child")
+```
+
+### Example
+
+```python
+age = 12
+
+if age >= 18:
+    print("You are an adult")
+elif age >= 13:
+    print("You are a teenager")
+else:
+    print("You are a child")
+```
+
+Output:
+
+```text
+You are a child
+```
+
+---
+
+# ⚡ Module 7: Truthy/Falsy States & Logical Operators
+
+## ⚖️ Universal Boolean Evaluation (Truthy vs. Falsy)
+
+Every object in Python has an inherent boolean value.
+
+You can inspect it using:
+
+```python
+bool(value)
+```
+
+### ❌ Falsy Values
+
+The following evaluate to `False`:
+
+* `False`
+* `None`
+* `0`
+* `0.0`
+* `""` (empty string)
+* `[]` (empty list)
+* `{}` (empty dictionary)
+* `()` (empty tuple)
+* `set()` (empty set)
+
+Example:
+
+```python
+bool("")
+```
+
+Output:
+
+```text
+False
+```
+
+---
+
+### ✅ Truthy Values
+
+Everything else evaluates to `True`.
+
+Examples include:
+
+* Non-zero integers
+* Non-zero floats
+* Non-empty strings
+* Non-empty lists
+* Non-empty dictionaries
+* Non-empty tuples
+* Non-empty sets
+
+Example:
+
+```python
+bool("False")
+```
+
+Output:
+
+```text
+True
+```
+
+Even though the text says `"False"`, it is **not empty**, so it is truthy.
+
+---
+
+## 🧩 Logical Operators
+
+Logical operators combine multiple conditions.
+
+### `and`
+
+Returns `True` only if **both** conditions are true.
+
+```python
+age = 20
+student = True
+
+age >= 18 and student
+```
+
+Output:
+
+```text
+True
+```
+
+---
+
+### `or`
+
+Returns `True` if **at least one** condition is true.
+
+```python
+False or True
+```
+
+Output:
+
+```text
+True
+```
+
+---
+
+### `not`
+
+Reverses a boolean value.
+
+```python
+not True
+```
+
+Output:
+
+```text
+False
+```
+
+---
+
+## ⚡ Short-Circuit Evaluation
+
+Python evaluates logical expressions from **left to right** and stops as soon as the final result is known.
+
+### `and` Short-Circuit
+
+If the first operand is falsy, Python skips evaluating the second operand.
+
+```python
+False and print("Hello")
+```
+
+Output:
+
+```text
+False
+```
+
+`print()` is never executed.
+
+---
+
+### `or` Short-Circuit
+
+If the first operand is truthy, Python skips evaluating the second operand.
+
+```python
+True or print("Hello")
+```
+
+Output:
+
+```text
+True
+```
+
+Again, `print()` is never executed.
+
+---
+
+## 📌 Key Takeaways
+
+* Comparison operators always return `True` or `False`.
+* Python uses indentation instead of braces to define code blocks.
+* The `pass` statement creates an empty placeholder block.
+* `if`, `elif`, and `else` must remain part of the same conditional chain.
+* Every Python object has an implicit boolean value.
+* Empty containers and zero values are falsy.
+* Non-empty containers and non-zero numbers are truthy.
+* `and`, `or`, and `not` are Python's logical operators.
+* Python uses short-circuit evaluation to avoid unnecessary computations.
+
