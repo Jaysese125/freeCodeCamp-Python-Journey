@@ -990,7 +990,26 @@ Again, `print()` is never executed.
 
   result = greet() # result is now None
 
-###🎛️ Standard Built-in Utilities
+### 🎛️ Standard Built-in Utilities
 * **input('prompt'):** Pauses runtime execution to prompt the user for input; always captures and returns the payload as a str.
 * **int(value):** Forces casting of compatible types into integer structures (int(3.14) $\rightarrow$ 3, int(True) $\rightarrow$ 1).
 
+---
+
+## 🔍 Module 9: The LEGB Scope Resolution Rule
+
+In Python, a variable's **scope** determines exactly where in the file it can be read or modified. Python evaluates where a variable name points by searching through 4 concentric rings from the inside out:
+
+
+
+### ⚙️ The LEGB Breakdown
+1. **L - Local Scope:** Variables instantiated inside the active function or class body block. Completely invisible to lines of code outside that function.
+2. **E - Enclosing Scope:** Found only in **nested functions**. The inner function has structural access to read variables created in the outer parent function's namespace.
+3. **G - Global Scope:** Variables instantiated at the top level of the module or file script. Fully readable anywhere within that specific file.
+4. **B - Built-in Scope:** Native variables, keywords, and functions loaded automatically when Python boots up (e.g., `print()`, `str()`, `ValueError`).
+
+### 🛠️ Scope Overriding Keywords
+By default, Python functions can *read* global or enclosing variables, but trying to *assign* a new value to them will just create a brand-new local variable instead. To override this behavior, use:
+
+* **`global variable_name`**: Instructs a function block to directly target and alter a variable living in the top-level Global scope pool instead of generating a local copy.
+* **`nonlocal variable_name`**: Instructs a nested inner function block to step out 1 layer and alter a variable sitting in the parent Enclosing function block.
