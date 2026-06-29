@@ -973,3 +973,24 @@ Again, `print()` is never executed.
 * `and`, `or`, and `not` are Python's logical operators.
 * Python uses short-circuit evaluation to avoid unnecessary computations.
 
+---
+
+## 🏗️ Module 8: Understanding Functions and Scope
+
+### 🧩 Core Vocabulary: Parameters vs. Arguments
+* **Parameters:** The variable placeholders defined inside the function's declaration signature. They act as local slots waiting for data.
+* **Arguments:** The actual concrete data values passed into those slots when the function is actively invoked.
+
+### 🔄 The `return` Keyword vs. `None`
+* Functions execute lines of code, but they also pass data back to the calling line using the `return` keyword.
+* **Implicit Default:** If a function finishes executing its body without hitting an explicit `return` statement, it automatically hands back **`None`** to the program.
+  ```python
+  def greet():
+      print("Hi!") # Displays text, but returns nothing
+
+  result = greet() # result is now None
+
+###🎛️ Standard Built-in Utilities
+* **input('prompt'):** Pauses runtime execution to prompt the user for input; always captures and returns the payload as a str.
+* **int(value):** Forces casting of compatible types into integer structures (int(3.14) $\rightarrow$ 3, int(True) $\rightarrow$ 1).
+

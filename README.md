@@ -6,7 +6,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 
 ## 📊 Comprehensive Progress Dashboard
 
-* 🟦 **01. Python Basics:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░]` 71/102 Steps
+* 🟦 **01. Python Basics:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░]` 72/102 Steps
 * ⬜ **02. Loops & Sequences:** `[░░░░░░░░░░░░░░░░░░░░]` 0/31 Steps
 * ⬜ **03. Dictionaries & Sets:** `[░░░░░░░░░░░░░░░░░░░░]` 0/50 Steps
 * ⬜ **04. Classes & Objects:** `[░░░░░░░░░░░░░░░░░░░░]` 0/71 Steps
@@ -33,7 +33,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Booleans and Conditionals | Theory | ✅ COMPLETED [2026-06-28] | `01-Introduction-And-Variables/notes.md` |
 | **Build a Movie Ticket Booking Calculator**| **Workshop** | ✅ COMPLETED [2026-06-28] | `ticket_calculator.py` |
 | **Build a Travel Weather Planner** | **Lab** | ✅ COMPLETED [2026-06-29] | `weather_planner.py` |
-| Understanding Functions and Scope | Theory | ⏳ NOT STARTED | `notes.md` |
+| Understanding Functions and Scope | Theory | ✅ COMPLETED [2026-06-30] | `01-Introduction-And-Variables/notes.md` |
 | **Build an Apply Discount Function** | **Lab** | ⏳ NOT STARTED | `discount_function.py` |
 | **Build a Caesar Cipher** | **Workshop** | ⏳ NOT STARTED | `caesar_cipher.py` |
 | **Build an RPG Character** | **Lab** | ⏳ NOT STARTED | `rpg_character.py` |
