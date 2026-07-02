@@ -6,8 +6,8 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 
 ## 📊 Comprehensive Progress Dashboard
 
-* 🟦 **01. Python Basics:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]` 99/102 Steps
-* ⬜ **02. Loops & Sequences:** `[░░░░░░░░░░░░░░░░░░░░]` 0/31 Steps
+* 🟦 **01. Python Basics:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]` 100/102 Steps
+* 🟨 **02. Iterables and Loops:** `[░░░░░░░░░░░░░░░░░░░░]` 0/114 Steps
 * ⬜ **03. Dictionaries & Sets:** `[░░░░░░░░░░░░░░░░░░░░]` 0/50 Steps
 * ⬜ **04. Classes & Objects:** `[░░░░░░░░░░░░░░░░░░░░]` 0/71 Steps
 * ⬜ **05. Object-Oriented Programming (OOP):** `[░░░░░░░░░░░░░░░░░░░░]` 0/123 Steps
@@ -36,7 +36,9 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Understanding Functions and Scope | Theory | ✅ COMPLETED [2026-06-30] | `01-Introduction-And-Variables/notes.md` |
 | **Build an Apply Discount Function** | **Lab** | ✅ COMPLETED [2026-06-30] | `discount_function.py` |
 | **Build a Caesar Cipher** | **Workshop** | ✅ COMPLETED [2026-07-02] | `caesar_cipher.py` |
-| **Build an RPG Character** | **Lab** | ⏳ NOT STARTED | `rpg_character.py` |
+| **Build an RPG Character** | **Lab** | ✅ COMPLETED [2026-07-03] | `rpg_character.py` |
+| Python Basics Review | Review | ⏳ NOT STARTED | |
+| Python Basics Quiz | Quiz | ⏳ NOT STARTED | |
 ---
 
 ## 🛠️ 02. Loops and Sequences
