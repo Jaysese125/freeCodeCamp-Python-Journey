@@ -25,20 +25,20 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 ### 🛠️ 01. Python Basics (102/102 Steps)
 | Sub-Module / Project | Milestone Type | Status / Completion Date | Associated Code / Notes |
 |:---|:---:|:---:|:---|
-| Introduction to Python | Theory | ✅ COMPLETED [2026-06-24] | `01-Introduction-And-Variables/notes.md` |
-| Understanding Variables & Data Types | Theory | ✅ COMPLETED [2026-06-24] | `01-Introduction-And-Variables/notes.md` |
-| **Build a Report Card Printer** | **Workshop** | ✅ COMPLETED [2026-06-24] | `report_card_printer.py` |
-| Introduction to Strings | Theory | ✅ COMPLETED [2026-06-24] | `01-Introduction-And-Variables/notes.md` |
-| **Build an Employee Profile Generator** | **Workshop** | ✅ COMPLETED [2026-06-25] | `employee_generator.py` |
-| Numbers & Mathematical Operations | Theory | ✅ COMPLETED [2026-06-26] | `01-Introduction-And-Variables/notes.md` |
-| **Build a Bill Splitter** | **Workshop** | ✅ COMPLETED [2026-07-27] | `bill_splitter.py` |
-| Booleans and Conditionals | Theory | ✅ COMPLETED [2026-06-28] | `01-Introduction-And-Variables/notes.md` |
-| **Build a Movie Ticket Booking Calculator**| **Workshop** | ✅ COMPLETED [2026-06-28] | `ticket_calculator.py` |
-| **Build a Travel Weather Planner** | **Lab** | ✅ COMPLETED [2026-06-29] | `weather_planner.py` |
-| Understanding Functions and Scope | Theory | ✅ COMPLETED [2026-06-30] | `01-Introduction-And-Variables/notes.md` |
-| **Build an Apply Discount Function** | **Lab** | ✅ COMPLETED [2026-06-30] | `discount_function.py` |
-| **Build a Caesar Cipher** | **Workshop** | ✅ COMPLETED [2026-07-02] | `caesar_cipher.py` |
-| **Build an RPG Character** | **Lab** | ✅ COMPLETED [2026-07-03] | `rpg_character.py` |
+| Introduction to Python | Theory | ✅ COMPLETED [2026-06-24] | `01-Python-Basics/01-Introduction-And-Variables/notes.md` |
+| Understanding Variables & Data Types | Theory | ✅ COMPLETED [2026-06-24] | `01-Python-Basics/01-Introduction-And-Variables/notes.md` |
+| **Build a Report Card Printer** | **Workshop** | ✅ COMPLETED [2026-06-24] | `01-Python-Basics/report_card_printer.py` |
+| Introduction to Strings | Theory | ✅ COMPLETED [2026-06-24] | `01-Python-Basics/01-Introduction-And-Variables/notes.md` |
+| **Build an Employee Profile Generator** | **Workshop** | ✅ COMPLETED [2026-06-25] | `01-Python-Basics/employee_generator.py` |
+| Numbers & Mathematical Operations | Theory | ✅ COMPLETED [2026-06-26] | `01-Python-Basics/01-Introduction-And-Variables/notes.md` |
+| **Build a Bill Splitter** | **Workshop** | ✅ COMPLETED [2026-07-27] | `01-Python-Basics/bill_splitter.py` |
+| Booleans and Conditionals | Theory | ✅ COMPLETED [2026-06-28] | `01-Python-Basics/01-Introduction-And-Variables/notes.md` |
+| **Build a Movie Ticket Booking Calculator**| **Workshop** | ✅ COMPLETED [2026-06-28] | `01-Python-Basics/ticket_calculator.py` |
+| **Build a Travel Weather Planner** | **Lab** | ✅ COMPLETED [2026-06-29] | `01-Python-Basics/weather_planner.py` |
+| Understanding Functions and Scope | Theory | ✅ COMPLETED [2026-06-30] | `01-Python-Basics/01-Introduction-And-Variables/notes.md` |
+| **Build an Apply Discount Function** | **Lab** | ✅ COMPLETED [2026-06-30] | `01-Python-Basics/discount_function.py` |
+| **Build a Caesar Cipher** | **Workshop** | ✅ COMPLETED [2026-07-02] | `01-Python-Basics/caesar_cipher.py` |
+| **Build an RPG Character** | **Lab** | ✅ COMPLETED [2026-07-03] | `01-Python-Basics/rpg_character.py` |
 | Python Basics Review | Review | ✅ COMPLETED [2026-07-04] | `README.md` |
 | Python Basics Quiz | Quiz | ✅ COMPLETED [2026-07-04] | `Grade: 20/20` |
 
