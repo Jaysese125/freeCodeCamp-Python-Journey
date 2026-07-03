@@ -10,7 +10,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 * ✅ **02. Install Python:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]` 5/5 Steps (COMPLETED)
 * 🟦 **03. Loops and Sequences:** `[░░░░░░░░░░░░░░░░░░░░]` 0/31 Steps
 * ⬜ **04. Dictionaries & Sets:** `[░░░░░░░░░░░░░░░░░░░░]` 0/50 Steps
-* ⬜ **05. Error Handling:** `[░░░░░░░░░░░░░░░░░░░░]` 0/7_ Steps
+* ⬜ **05. Error Handling:** `[░░░░░░░░░░░░░░░░░░░░]` 0/7 Steps
 * ⬜ **06. Classes & Objects:** `[░░░░░░░░░░░░░░░░░░░░]` 0/71 Steps
 * ⬜ **07. Object-Oriented Programming (OOP):** `[░░░░░░░░░░░░░░░░░░░░]` 0/123 Steps
 * ⬜ **08. Linear Data Structures:** `[░░░░░░░░░░░░░░░░░░░░]` 0/32 Steps
@@ -57,8 +57,8 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Module / Challenge | Type | Status | Reference Code / Notes |
 | :--- | :--- | :--- | :--- |
 | Working with Loops and Sequences | Theory | ⏳ NOT STARTED | `03-Loops-And-Sequences/notes.md` |
-| **Build a Pin Extractor** | Workshop | ⏳ NOT STARTED | `pin_extractor.py` |
-| **Build a Number Pattern Generator** | Lab | ⏳ NOT STARTED | `pattern_generator.py` |
+| **Build a Pin Extractor** | Workshop | ⏳ NOT STARTED | `03-Loops-And-Sequences/pin_extractor.py` |
+| **Build a Number Pattern Generator** | Lab | ⏳ NOT STARTED | `03-Loops-And-Sequences/pattern_generator.py` |
 | Loops and Sequences Review | Review | ⏳ NOT STARTED | Verified |
 | Loops and Sequences Quiz | Quiz | ⏳ NOT STARTED | Verified |
 
@@ -67,91 +67,91 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | :--- | :--- | :--- | :--- |
 | Working with Dictionaries and Sets | Theory | ⏳ NOT STARTED | `04-Dictionaries-And-Sets/notes.md` |
 | Working with Modules | Theory | ⏳ NOT STARTED | `04-Dictionaries-And-Sets/notes.md` |
-| **Build a Medical Data Validator** | Workshop | ⏳ NOT STARTED | `medical_validator.py` |
+| **Build a Medical Data Validator** | Workshop | ⏳ NOT STARTED | `04-Dictionaries-And-Sets/medical_validator.py` |
 | Dictionaries and Sets Review | Review | ⏳ NOT STARTED | Verified |
 | Dictionaries and Sets Quiz | Quiz | ⏳ NOT STARTED | Verified |
-| 🏆 **Build a User Configuration Manager** | **CERT PROJECT** | ⏳ NOT STARTED | `config_manager.py` |
+| 🏆 **Build a User Configuration Manager** | **CERT PROJECT** | ⏳ NOT STARTED | `04-Dictionaries-And-Sets/config_manager.py` |
 
 ---
 
 ## 🛠️ Future Architecture Blocks
 
 ### ⚠️ 05. Error Handling (0/7 Steps)
-| Sub-Module / Project          | Milestone Type | Status | Associated Code / Notes |
-| :--------------------------- | :------------: | :----: | :---------------------- |
-| Understanding Error Handling |     Theory     |   ⏳   | `05-Error-Handling/notes.md` |
-| **Debug an ISBN Validator** |    **Lab** |   ⏳   | `isbn_validator.py`     |
-| Error Handling Review        |     Review     |   ⏳   | Verified                |
-| Error Handling Quiz          |      Quiz      |   ⏳   | Verified                |
+| Sub-Module / Project | Milestone Type | Status | Associated Code / Notes |
+| :--- | :---: | :---: | :--- |
+| Understanding Error Handling | Theory | ⏳ | `05-Error-Handling/notes.md` |
+| **Debug an ISBN Validator** | **Lab** | ⏳ | `05-Error-Handling/isbn_validator.py` |
+| Error Handling Review | Review | ⏳ | Verified |
+| Error Handling Quiz | Quiz | ⏳ | Verified |
 
 ### 📦 06. Classes and Objects (0/71 Steps)
-| Sub-Module / Project                     |  Milestone Type  | Status | Associated Code / Notes   |
-| :--------------------------------------- | :--------------: | :----: | :------------------------ |
-| Classes and Objects                      |      Theory      |   ⏳   | `06-Classes-And-Objects/notes.md` |
-| **Build a Musical Instrument Inventory** |   **Workshop** |   ⏳   | `instrument_inventory.py` |
-| **Build a Planet Class** |     **Lab** |   ⏳   | `planet_class.py`         |
-| **Build an Email Simulator** |   **Workshop** |   ⏳   | `email_simulator.py`      |
-| Classes and Objects Review               |     Review       |   ⏳   | Verified                  |
-| Classes and Objects Quiz                 |      Quiz        |   ⏳   | Verified                  |
-| 🏆 **Build a Budget App** | **CERT PROJECT** |   ⏳   | `budget_app.py`           |
+| Sub-Module / Project | Milestone Type | Status | Associated Code / Notes |
+| :--- | :---: | :---: | :--- |
+| Classes and Objects | Theory | ⏳ | `06-Classes-And-Objects/notes.md` |
+| **Build a Musical Instrument Inventory** | **Workshop** | ⏳ | `06-Classes-And-Objects/instrument_inventory.py` |
+| **Build a Planet Class** | **Lab** | ⏳ | `06-Classes-And-Objects/planet_class.py` |
+| **Build an Email Simulator** | **Workshop** | ⏳ | `06-Classes-And-Objects/email_simulator.py` |
+| Classes and Objects Review | Review | ⏳ | Verified |
+| Classes and Objects Quiz | Quiz | ⏳ | Verified |
+| 🏆 **Build a Budget App** | **CERT PROJECT** | ⏳ | `06-Classes-And-Objects/budget_app.py` |
 
 ### 🧬 07. Object-Oriented Programming (OOP) (0/123 Steps)
-| Sub-Module / Project                     |  Milestone Type  | Status | Associated Code / Notes  |
-| :--------------------------------------- | :--------------: | :----: | :----------------------- |
-| OOP and Encapsulation                    |      Theory      |   ⏳   | `07-OOP/notes.md`        |
-| **Build a Salary Tracker** |   **Workshop** |   ⏳   | `salary_tracker.py`      |
-| **Build a Game Character Stats Tracker** |     **Lab** |   ⏳   | `stats_tracker.py`       |
-| Inheritance and Polymorphism             |      Theory      |   ⏳   | `07-OOP/notes.md`        |
-| **Build a Media Catalogue** |   **Workshop** |   ⏳   | `media_catalogue.py`     |
-| Understanding Abstraction                |      Theory      |   ⏳   | `07-OOP/notes.md`        |
-| **Build a Discount Calculator** |   **Workshop** |   ⏳   | `discount_calculator.py` |
-| **Build a Player Interface** |     **Lab** |   ⏳   | `player_interface.py`    |
-| OOP Review                               |     Review       |   ⏳   | Verified                  |
-| OOP Quiz                                 |      Quiz        |   ⏳   | Verified                  |
-| 🏆 **Build a Polygon Area Calculator** | **CERT PROJECT** |   ⏳   | `polygon_calculator.py`  |
+| Sub-Module / Project | Milestone Type | Status | Associated Code / Notes |
+| :--- | :---: | :---: | :--- |
+| OOP and Encapsulation | Theory | ⏳ | `07-OOP/notes.md` |
+| **Build a Salary Tracker** | **Workshop** | ⏳ | `07-OOP/salary_tracker.py` |
+| **Build a Game Character Stats Tracker** | **Lab** | ⏳ | `07-OOP/stats_tracker.py` |
+| Inheritance and Polymorphism | Theory | ⏳ | `07-OOP/notes.md` |
+| **Build a Media Catalogue** | **Workshop** | ⏳ | `07-OOP/media_catalogue.py` |
+| Understanding Abstraction | Theory | ⏳ | `07-OOP/notes.md` |
+| **Build a Discount Calculator** | **Workshop** | ⏳ | `07-OOP/discount_calculator.py` |
+| **Build a Player Interface** | **Lab** | ⏳ | `07-OOP/player_interface.py` |
+| OOP Review | Review | ⏳ | Verified |
+| OOP Quiz | Quiz | ⏳ | Verified |
+| 🏆 **Build a Polygon Area Calculator** | **CERT PROJECT** | ⏳ | `07-OOP/polygon_calculator.py` |
 
 ### 🪵 08. Linear Data Structures (0/32 Steps)
-| Sub-Module / Project                        |  Milestone Type  | Status | Associated Code / Notes |
-| :----------------------------------------- | :--------------: | :----: | :---------------------- |
-| Working with Common Data Structures        |      Theory      |   ⏳   | `08-Data-Structures/notes.md` |
-| **Build a Linked List** |   **Workshop** |   ⏳   | `linked_list.py`        |
-| Data Structures Review                     |     Review       |   ⏳   | Verified                |
-| Data Structures Quiz                       |      Quiz        |   ⏳   | Verified                |
-| 🏆 **Build a Hash Table** | **CERT PROJECT** |   ⏳   | `hash_table.py`         |
+| Sub-Module / Project | Milestone Type | Status | Associated Code / Notes |
+| :--- | :---: | :---: | :--- |
+| Working with Common Data Structures | Theory | ⏳ | `08-Data-Structures/notes.md` |
+| **Build a Linked List** | **Workshop** | ⏳ | `08-Data-Structures/linked_list.py` |
+| Data Structures Review | Review | ⏳ | Verified |
+| Data Structures Quiz | Quiz | ⏳ | Verified |
+| 🏆 **Build a Hash Table** | **CERT PROJECT** | ⏳ | `08-Data-Structures/hash_table.py` |
 
 ### 🧮 09. Algorithms (0/49 Steps)
-| Sub-Module / Project                        |  Milestone Type  | Status | Associated Code / Notes |
-| :----------------------------------------- | :--------------: | :----: | :---------------------- |
-| Searching and Sorting Algorithms            |      Theory      |   ⏳   | `09-Algorithms/notes.md` |
-| **Implement Binary Search Algorithm** |   **Workshop** |   ⏳   | `binary_search.py`      |
-| **Implement the Bisection Method** |     **Lab** |   ⏳   | `bisection_method.py`   |
-| **Implement the Merge Sort Algorithm** |   **Workshop** |   ⏳   | `merge_sort.py`         |
-| **Implement the Quicksort Algorithm** |     **Lab** |   ⏳   | `quicksort.py`          |
-| **Implement the Selection Sort Algorithm** |     **Lab** |   ⏳   | `selection_sort.py`     |
-| **Implement the Luhn Algorithm** |     **Lab** |   ⏳   | `luhn.py`               |
-| Algorithms Review                          |     Review       |   ⏳   | Verified                |
-| Algorithms Quiz                            |      Quiz        |   ⏳   | Verified                |
-| 🏆 **Implement Tower of Hanoi Algorithm** | **CERT PROJECT** |   ⏳   | `tower_of_hanoi.py`     |
+| Sub-Module / Project | Milestone Type | Status | Associated Code / Notes |
+| :--- | :---: | :---: | :--- |
+| Searching and Sorting Algorithms | Theory | ⏳ | `09-Algorithms/notes.md` |
+| **Implement Binary Search Algorithm** | **Workshop** | ⏳ | `09-Algorithms/binary_search.py` |
+| **Implement the Bisection Method** | **Lab** | ⏳ | `09-Algorithms/bisection_method.py` |
+| **Implement the Merge Sort Algorithm** | **Workshop** | ⏳ | `09-Algorithms/merge_sort.py` |
+| **Implement the Quicksort Algorithm** | **Lab** | ⏳ | `09-Algorithms/quicksort.py` |
+| **Implement the Selection Sort Algorithm** | **Lab** | ⏳ | `09-Algorithms/selection_sort.py` |
+| **Implement the Luhn Algorithm** | **Lab** | ⏳ | `09-Algorithms/luhn.py` |
+| Algorithms Review | Review | ⏳ | Verified |
+| Algorithms Quiz | Quiz | ⏳ | Verified |
+| 🏆 **Implement Tower of Hanoi Algorithm** | **CERT PROJECT** | ⏳ | `09-Algorithms/tower_of_hanoi.py` |
 
 ### 🌲 10. Graphs & Trees (0/51 Steps)
-| Sub-Module / Project                         | Milestone Type | Status | Associated Code / Notes |
-| :------------------------------------------- | :------------: | :----: | :---------------------- |
-| Understanding Graphs and Trees               |     Theory     |   ⏳   | `10-Graphs-And-Trees/notes.md` |
-| **Implement the Shortest Path Algorithm** |  **Workshop** |   ⏳   | `shortest_path.py`      |
-| **Build Adjacency List to Matrix Converter** |     **Lab** |   ⏳   | `matrix_converter.py`   |
-| **Implement Breadth-First Search** |  **Workshop** |   ⏳   | `bfs.py`                |
-| **Implement Depth-First Search** |     **Lab** |   ⏳   | `dfs.py`                |
-| **Implement the N-Queens Problem** |     **Lab** |   ⏳   | `n_queens.py`           |
-| Graphs & Trees Review                        |     Review     |   ⏳   | Verified                |
-| Graphs & Trees Quiz                          |      Quiz      |   ⏳   | Verified                |
+| Sub-Module / Project | Milestone Type | Status | Associated Code / Notes |
+| :--- | :---: | :---: | :--- |
+| Understanding Graphs and Trees | Theory | ⏳ | `10-Graphs-And-Trees/notes.md` |
+| **Implement the Shortest Path Algorithm** | **Workshop** | ⏳ | `10-Graphs-And-Trees/shortest_path.py` |
+| **Build Adjacency List to Matrix Converter** | **Lab** | ⏳ | `10-Graphs-And-Trees/matrix_converter.py` |
+| **Implement Breadth-First Search** | **Workshop** | ⏳ | `10-Graphs-And-Trees/bfs.py` |
+| **Implement Depth-First Search** | **Lab** | ⏳ | `10-Graphs-And-Trees/dfs.py` |
+| **Implement the N-Queens Problem** | **Lab** | ⏳ | `10-Graphs-And-Trees/n_queens.py` |
+| Graphs & Trees Review | Review | ⏳ | Verified |
+| Graphs & Trees Quiz | Quiz | ⏳ | Verified |
 
 ### ⚡ 11. Dynamic Programming (0/4 Steps)
-| Sub-Module / Project                         | Milestone Type | Status | Associated Code / Notes |
-| :------------------------------------------- | :------------: | :----: | :---------------------- |
-| Understanding Dynamic Programming            |     Theory     |   ⏳   | `11-Dynamic-Programming/notes.md` |
-| **Build an Nth Fibonacci Number Calculator** |     **Lab** |   ⏳   | `fibonacci.py`          |
-| Dynamic Programming Review                   |     Review     |   ⏳   | Verified                |
-| Dynamic Programming Quiz                     |      Quiz      |   ⏳   | Verified                |
+| Sub-Module / Project | Milestone Type | Status | Associated Code / Notes |
+| :--- | :---: | :---: | :--- |
+| Understanding Dynamic Programming | Theory | ⏳ | `11-Dynamic-Programming/notes.md` |
+| **Build an Nth Fibonacci Number Calculator** | **Lab** | ⏳ | `11-Dynamic-Programming/fibonacci.py` |
+| Dynamic Programming Review | Review | ⏳ | Verified |
+| Dynamic Programming Quiz | Quiz | ⏳ | Verified |
 
 ---
 
