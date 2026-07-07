@@ -238,3 +238,18 @@ print(remaining)
 | Supports Slicing  | ✅                   | ✅                                  |
 | Can Be Modified   | ✅                   | ❌                                  |
 | Common Use        | Dynamic collections | Fixed collections / read-only data |
+
+---
+
+## 7. Control Flow: Loops and Iteration
+
+### For Loops vs While Loops
+* **`for` Loop:** Natively designed for definite iteration. It traverses an entire iterable sequence (lists, tuples, strings) element by element until exhausted.
+* **`while` Loop:** Designed for indefinite iteration. It continuously runs a block of code based on a conditional statement, repeating until that predicate evaluates to `False`.
+
+### Loop Jump Statements
+* **`break`:** Instantly terminates the inner loop scope completely, shifting program execution to the immediate next line outside the loop block.
+* **`continue`:** Short-circuits the rest of the current block iteration code, jumping directly back up to evaluate the next cycle element or condition.
+
+### The Unique `else` Clause
+Python loops support a trailing `else:` code block. This block executes **only if** the loop completes its full natural run without hitting a single explicit `break` statement.
