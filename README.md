@@ -8,7 +8,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 
 * ✅ **01. Python Basics:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]` 102/102 Steps (COMPLETED)
 * ✅ **02. Install Python:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]` 5/5 Steps (COMPLETED)
-* 🟦 **03. Loops and Sequences:** `[▓▓▓▓░░░░░░░░░░░░░░░░]` 6/31 Steps
+* 🟦 **03. Loops and Sequences:** `[▓▓▓▓▓░░░░░░░░░░░░░░░]` 7/31 Steps
 * ⬜ **04. Dictionaries & Sets:** `[░░░░░░░░░░░░░░░░░░░░]` 0/50 Steps
 * ⬜ **05. Error Handling:** `[░░░░░░░░░░░░░░░░░░░░]` 0/7 Steps
 * ⬜ **06. Classes & Objects:** `[░░░░░░░░░░░░░░░░░░░░]` 0/71 Steps
@@ -53,7 +53,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Python Installation Review | Review | ✅ COMPLETED | `02-Install-Python/notes.md` |
 | Python Installation Quiz | Quiz | ✅ COMPLETED | Grade: 10/10 |
 
-### 🔄 03. Loops and Sequences (6/31 Steps)
+### 🔄 03. Loops and Sequences (7/31 Steps)
 | Module / Challenge | Type | Status | Reference Code / Notes |
 | :--- | :--- | :--- | :--- |
 | Working with Lists | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
@@ -62,7 +62,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Common Tuple Methods | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | How Do Loops Work? | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | Working with Ranges | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
-| **Build a Pin Extractor** | Workshop | ⏳ NOT STARTED | `03-Loops-And-Sequences/pin_extractor.py` |
+| Built-in Loop Functions | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | **Build a Pin Extractor** | Workshop | ⏳ NOT STARTED | `03-Loops-And-Sequences/pin_extractor.py` |
 | **Build a Number Pattern Generator** | Lab | ⏳ NOT STARTED | `03-Loops-And-Sequences/pattern_generator.py` |
 | Loops and Sequences Review | Review | ⏳ NOT STARTED | Verified |
