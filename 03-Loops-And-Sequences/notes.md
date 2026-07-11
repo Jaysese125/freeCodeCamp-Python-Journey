@@ -1,22 +1,20 @@
 # 🔄 Study Notes: Loops and Sequences
 
-------------------------------------------------------------------------
+## 1. Core Mechanics of Python Lists
 
-# 1. Core Mechanics of Python Lists
+### Definition
 
-## Definition
+A **list** is an ordered, mutable collection enclosed in square brackets
+`[]`.
 
-A **list** is an ordered, mutable collection of items enclosed in square
-brackets `[]`.
-
-A list can contain elements of different data types.
+Lists can store multiple values, including different data types.
 
 ``` python
 numbers = [1, 2, 3]
 mixed = ["Alice", 25, True]
 ```
 
-## Zero-Based Indexing
+### Zero-Based Indexing
 
 -   The first element has an index of `0`.
 -   Negative indices count from the end.
@@ -25,102 +23,127 @@ mixed = ["Alice", 25, True]
 ``` python
 fruits = ["apple", "banana", "orange"]
 
-print(fruits[0])   # apple
-print(fruits[-1])  # orange
+print(fruits[0])
+print(fruits[-1])
 ```
 
 Accessing an invalid index raises:
 
-``` python
+``` text
 IndexError
 ```
 
 ------------------------------------------------------------------------
 
-# 9. Advanced Loop Utilities: `enumerate()` and `zip()`
+## 2. Advanced Loop Utilities: `enumerate()` and `zip()`
 
-These built-in functions make loops cleaner, more readable, and more
-Pythonic.
+After learning `for` loops, Python provides two useful built-in
+functions that make looping cleaner and more readable.
 
-## The `enumerate()` Function
+### The `enumerate()` Function
+
+#### Definition
 
 `enumerate()` automatically keeps track of the index while iterating
 over an iterable.
 
-### Syntax
+Instead of manually maintaining an index variable, it returns both the
+index and the value.
+
+#### Syntax
 
 ``` python
 enumerate(iterable, start=0)
 ```
 
-### Returns
+### Without `enumerate()`
 
-An **enumerate object** that yields tuples in the form:
+``` python
+languages = ["Spanish", "English", "Russian", "Chinese"]
+
+index = 0
+
+for language in languages:
+    print(f"Index {index} and language {language}")
+    index += 1
+```
+
+### Using `enumerate()`
+
+``` python
+languages = ["Spanish", "English", "Russian", "Chinese"]
+
+for index, language in enumerate(languages):
+    print(f"Index {index} and language {language}")
+```
+
+Output
+
+``` text
+Index 0 and language Spanish
+Index 1 and language English
+Index 2 and language Russian
+Index 3 and language Chinese
+```
+
+### What Does `enumerate()` Return?
+
+``` python
+languages = ["Spanish", "English", "Russian", "Chinese"]
+
+print(list(enumerate(languages)))
+```
+
+Output
+
+``` python
+[(0, 'Spanish'),
+ (1, 'English'),
+ (2, 'Russian'),
+ (3, 'Chinese')]
+```
+
+Each item is a tuple:
 
 ``` text
 (index, value)
 ```
 
-### Example
+The `for` loop automatically unpacks each tuple into the variables
+`index` and `language`.
+
+### Using the `start` Parameter
 
 ``` python
-languages = ["Spanish", "English", "Russian"]
-
-for index, language in enumerate(languages):
-    print(index, language)
+for index, language in enumerate(languages, 1):
+    print(f"Index {index} and language {language}")
 ```
 
 Output
 
 ``` text
-0 Spanish
-1 English
-2 Russian
+Index 1 and language Spanish
+Index 2 and language English
+Index 3 and language Russian
+Index 4 and language Chinese
 ```
 
-### Starting the Count
+The optional `start` argument changes the initial value of the counter.
 
-Use the optional `start` parameter to begin counting from another value.
+### When to Use `enumerate()`
 
-``` python
-for index, language in enumerate(languages, start=1):
-    print(f"{index}: {language}")
-```
-
-Output
-
-``` text
-1: Spanish
-2: English
-3: Russian
-```
-
-### Why Use `enumerate()`?
-
-Instead of:
-
-``` python
-index = 0
-
-for language in languages:
-    print(index, language)
-    index += 1
-```
-
-Use:
-
-``` python
-for index, language in enumerate(languages):
-    print(index, language)
-```
-
-It is shorter, cleaner, and avoids manually updating an index variable.
+-   When you need both the index and value.
+-   To avoid manually incrementing an index variable.
+-   To write cleaner, more Pythonic loops.
 
 ------------------------------------------------------------------------
 
 ## The `zip()` Function
 
-`zip()` combines two or more iterables element-by-element.
+### Definition
+
+`zip()` combines two or more iterables element-by-element and returns an
+iterator of tuples.
 
 ### Syntax
 
@@ -128,15 +151,11 @@ It is shorter, cleaner, and avoids manually updating an index variable.
 zip(iterable1, iterable2, ...)
 ```
 
-### Returns
-
-An iterator that yields tuples.
-
-Example:
+### Viewing the Result
 
 ``` python
-developers = ["Naomi", "Dario"]
-ids = [101, 102]
+developers = ["Naomi", "Dario", "Jessica", "Tom"]
+ids = [1, 2, 3, 4]
 
 print(list(zip(developers, ids)))
 ```
@@ -144,32 +163,47 @@ print(list(zip(developers, ids)))
 Output
 
 ``` python
-[("Naomi", 101), ("Dario", 102)]
+[('Naomi', 1),
+ ('Dario', 2),
+ ('Jessica', 3),
+ ('Tom', 4)]
 ```
 
-### Looping with `zip()`
+Each tuple contains one item from each iterable.
+
+### Using `zip()` in a Loop
 
 ``` python
-developers = ["Naomi", "Dario"]
-ids = [101, 102]
+developers = ["Naomi", "Dario", "Jessica", "Tom"]
+ids = [1, 2, 3, 4]
 
 for name, emp_id in zip(developers, ids):
-    print(f"ID {emp_id} belongs to {name}")
+    print(f"Name: {name}")
+    print(f"ID: {emp_id}")
 ```
 
 Output
 
 ``` text
-ID 101 belongs to Naomi
-ID 102 belongs to Dario
+Name: Naomi
+ID: 1
+Name: Dario
+ID: 2
+Name: Jessica
+ID: 3
+Name: Tom
+ID: 4
 ```
 
-### Different Length Iterables
+The tuples returned by `zip()` are automatically unpacked into `name`
+and `emp_id`.
+
+### Key Behavior
 
 `zip()` stops when the shortest iterable is exhausted.
 
 ``` python
-names = ["Anna", "Ben", "Chris"]
+names = ["Alice", "Bob", "Charlie"]
 scores = [90, 85]
 
 for name, score in zip(names, scores):
@@ -179,59 +213,42 @@ for name, score in zip(names, scores):
 Output
 
 ``` text
-Anna 90
-Ben 85
+Alice 90
+Bob 85
 ```
 
-`"Chris"` is ignored because there is no matching score.
+`"Charlie"` is ignored because there is no matching score.
 
 ------------------------------------------------------------------------
 
-## Combining `enumerate()` and `zip()`
+## 📝 Key Takeaways
 
-You can number rows while looping through multiple iterables.
+### `enumerate()`
 
-``` python
-names = ["Anna", "Ben", "Chris"]
-scores = [90, 80, 95]
+-   Automatically provides an index and value.
+-   Returns an enumerate object.
+-   Produces `(index, value)` tuples.
+-   Supports the optional `start` parameter.
 
-for index, (name, score) in enumerate(zip(names, scores), start=1):
-    print(index, name, score)
-```
+### `zip()`
 
-Output
+-   Iterates over multiple iterables in parallel.
+-   Returns tuples containing paired elements.
+-   Stops when the shortest iterable ends.
 
-``` text
-1 Anna 90
-2 Ben 80
-3 Chris 95
-```
-
-------------------------------------------------------------------------
-
-## Quick Comparison
+## 💡 Cheat Sheet
 
   -----------------------------------------------------------------------
-  Function                  Purpose                Returns
-  ------------------------- ---------------------- ----------------------
-  `enumerate()`             Loop with both index   `(index, value)`
-                            and value              tuples
+  Function                              Purpose
+  ------------------------------------- ---------------------------------
+  `enumerate(iterable)`                 Returns `(index, value)` pairs
 
-  `zip()`                   Loop through multiple  Tuples containing one
-                            iterables              item from each
-                            simultaneously         iterable
+  `enumerate(iterable, start=1)`        Starts counting from a custom
+                                        number
+
+  `zip(a, b)`                           Combines iterables into tuples
+
+  `list(enumerate(...))`                View enumerate output
+
+  `list(zip(...))`                      View zipped tuples
   -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-## Key Takeaways
-
--   `enumerate()` automatically provides both the index and value while
-    looping.
--   Use `start=` to change the starting index.
--   `zip()` pairs elements from multiple iterables together.
--   `zip()` stops at the shortest iterable.
--   Both functions produce tuples that can be unpacked directly in a
-    `for` loop.
--   `enumerate()` and `zip()` can be combined for clean, numbered
-    iteration across multiple collections.
