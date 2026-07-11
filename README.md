@@ -1,8 +1,12 @@
 # 🐍 freeCodeCamp: Scientific Computing with Python
 
-A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts mapping my progression through the 531-step freeCodeCamp curriculum.
+A daily tracking journal documenting my progress through the 531-step freeCodeCamp Scientific Computing with Python curriculum, including comprehensive study notes, practice code, labs, workshops, and certification projects.
 
 ---
+
+> **Current Overall Progress (July 2026):** **114 / 531 steps completed (21.5%)**
+>
+> **Latest topics completed:** Lists, Tuples, Loops, `range()`, `enumerate()`, and `zip()`.
 
 ## 📊 Comprehensive Progress Dashboard
 
@@ -42,10 +46,6 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Python Basics Review | Review | ✅ COMPLETED [2026-07-04] | `README.md` |
 | Python Basics Quiz | Quiz | ✅ COMPLETED [2026-07-04] | `Grade: 20/20` |
 
----
-
-## 🚀 Active Module Trackers
-
 ### 💻 02. Install Python (5/5 Steps) - COMPLETED
 | Module / Challenge | Type | Status | Reference Code / Notes |
 | :--- | :--- | :--- | :--- |
@@ -53,7 +53,11 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Python Installation Review | Review | ✅ COMPLETED | `02-Install-Python/notes.md` |
 | Python Installation Quiz | Quiz | ✅ COMPLETED | Grade: 10/10 |
 
-### 🔄 03. Loops and Sequences (7/31 Steps)
+---
+
+## 🚀 Active Module Trackers
+
+### 🔄 03. Loops and Sequences (7/31 Steps • 23%)
 | Module / Challenge | Type | Status | Reference Code / Notes |
 | :--- | :--- | :--- | :--- |
 | Working with Lists | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
@@ -62,7 +66,7 @@ A daily tracking journal, lesson-by-lesson study notes, and laboratory scripts m
 | Common Tuple Methods | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | How Do Loops Work? | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | Working with Ranges | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
-| Built-in Loop Functions | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
+| Built-in Loop Functions (`enumerate()` & `zip()`) | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | **Build a Pin Extractor** | Workshop | ⏳ NOT STARTED | `03-Loops-And-Sequences/pin_extractor.py` |
 | **Build a Number Pattern Generator** | Lab | ⏳ NOT STARTED | `03-Loops-And-Sequences/pattern_generator.py` |
 | Loops and Sequences Review | Review | ⏳ NOT STARTED | Verified |
