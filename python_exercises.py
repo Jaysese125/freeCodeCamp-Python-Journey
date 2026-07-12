@@ -87,3 +87,85 @@ print('Fruits:', fruits) # = Fruits: ['apple', 'banana', 'cherry']
 #None is a special data type that represents the absence of a value.
 value = None
 print('Value:', value) # = Value: None
+
+"""
+Immutable Types: An immutable object stays the same after
+it's created. If you "change" it, Python actually creates a
+new object instead.
+"""
+name = 'Jay'
+name = 'Chris' #Jay is still there but Chris overlaps it.
+
+print('Name:', name) # = Name: Chris
+
+"""
+Mutable Types: These types can change once declared. You can
+add, remove, or update their items. They include collection
+types such as list, set, and dictionary.
+"""
+fruits = ['apple', 'banana', 'cherry']
+fruits.append('orange') #Add an item to the end of the list.
+
+print('Fruits:', fruits) # = Fruits: ['apple', 'banana', 'cherry', 'orange']
+
+#type() function is used to check the data type of a variable.
+food = 'Pizza'
+pieces = 8
+print(type(food)) # = <class 'str'>
+print(type(pieces)) # = <class 'int'>
+
+#isinstance() function is used to check if a variable is an instance of a specific data type.
+print(isinstance(food, str)) # = True
+print(isinstance(pieces, int)) # = True
+
+#Accessing Characters from a String
+#You can access individual characters in a string using indexing.
+message = "Hello, World!"
+print(message[0])  # Output: H
+print(message[7])  # Output: W
+
+print(message[-1]) # Output: !
+print(message[-5]) # Output: o
+
+#Escaping Characters in a String
+#You can use the backslash (\) to escape characters in a string.
+text = "He said, \"Hello, World!\""
+print(text)  # Output: He said, "Hello, World!"
+
+#String Concatenation
+#You can concatenate strings using the + operator.
+frst_name = "Jay"
+last_name = "Sese"
+full_name = frst_name + " " + last_name
+print(full_name)  # Output: Jay Sese
+
+#You can perform concatenation and assignment in the same step.
+introduction = "Hello, my name is "
+introduction += full_name
+print(introduction)  # Output: Hello, my name is Jay Sese
+
+#f-Strings (Formatted String Literals)
+#You can use f-strings to embed expressions inside string literals.
+intro = f"Hello, my name is {full_name} and I am {age} years old."
+print(intro)  # Output: Hello, my name is Jay Sese and I am 22 years old.
+
+"""
+String Slicing
+
+You can extract a substring from a string using slicing.
+
+str[start:stop:step]
+Start: The starting index of the substring (inclusive).
+Stop: The ending index of the substring (exclusive).
+Step: The step size for slicing (optional).
+"""
+message = 'Python is fun!'
+
+print(message[0:6])  # Python
+print(message[7:])  # is fun!
+print(message[::2])  # Pto sfn
+
+#Getting the Length of a String
+#You can use the len() function to get the length of a string.
+text = "Hello, World!"
+print(len(text))  # Output: 13
