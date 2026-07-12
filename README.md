@@ -4,15 +4,15 @@ A daily tracking journal documenting my progress through the 531-step freeCodeCa
 
 ---
 
-> **Current Overall Progress (July 2026):** **114 / 531 steps completed (21.5%)**
+> **Current Overall Progress (July 2026):** **115 / 531 steps completed (21.7%)**
 >
-> **Latest topics completed:** Lists, Tuples, Loops, `range()`, `enumerate()`, and `zip()`.
+> **Latest topics completed:** Lists, Tuples, Loops, `range()`, `enumerate()`, `zip()`, **List Comprehensions**, `filter()`, `map()`, and `sum()`.
 
 ## 📊 Comprehensive Progress Dashboard
 
 * ✅ **01. Python Basics:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]` 102/102 Steps (COMPLETED)
 * ✅ **02. Install Python:** `[▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]` 5/5 Steps (COMPLETED)
-* 🟦 **03. Loops and Sequences:** `[▓▓▓▓▓░░░░░░░░░░░░░░░]` 7/31 Steps
+* 🟦 **03. Loops and Sequences:** `[▓▓▓▓▓▓░░░░░░░░░░░░░░]` 8/31 Steps
 * ⬜ **04. Dictionaries & Sets:** `[░░░░░░░░░░░░░░░░░░░░]` 0/50 Steps
 * ⬜ **05. Error Handling:** `[░░░░░░░░░░░░░░░░░░░░]` 0/7 Steps
 * ⬜ **06. Classes & Objects:** `[░░░░░░░░░░░░░░░░░░░░]` 0/71 Steps
@@ -57,7 +57,7 @@ A daily tracking journal documenting my progress through the 531-step freeCodeCa
 
 ## 🚀 Active Module Trackers
 
-### 🔄 03. Loops and Sequences (7/31 Steps • 23%)
+### 🔄 03. Loops and Sequences (8/31 Steps • 26%)
 | Module / Challenge | Type | Status | Reference Code / Notes |
 | :--- | :--- | :--- | :--- |
 | Working with Lists | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
@@ -67,6 +67,7 @@ A daily tracking journal documenting my progress through the 531-step freeCodeCa
 | How Do Loops Work? | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | Working with Ranges | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | Built-in Loop Functions (`enumerate()` & `zip()`) | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
+| List Comprehensions & Useful List Functions (`filter()`, `map()`, `sum()`) | Theory | ✅ COMPLETED | `03-Loops-And-Sequences/notes.md` |
 | **Build a Pin Extractor** | Workshop | ⏳ NOT STARTED | `03-Loops-And-Sequences/pin_extractor.py` |
 | **Build a Number Pattern Generator** | Lab | ⏳ NOT STARTED | `03-Loops-And-Sequences/pattern_generator.py` |
 | Loops and Sequences Review | Review | ⏳ NOT STARTED | Verified |

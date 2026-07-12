@@ -4,9 +4,6 @@ then the value of the variable.
 -It can be a string, integer/float, boolean. etc.
 """
 
-from collections.abc import Set
-
-
 string = 'Jay'
 integer = 22
 float = 22.5
