@@ -341,3 +341,79 @@ print(tresult)  # Output: 12345
 table = str.maketrans('abc', '123')
 translated = 'abcabc'.translate(table)
 print(translated)  # Output: 123123
+
+print('--------------------------------------')
+
+int1 = 12
+int2 = 25
+float1 = 0.3
+float2 = 1.2
+
+#Addition (+) adds two numbers together.
+print('Integer Addition: ', int1 + int2)  # Output: 37
+print('Float Addition: ', float1 + float2)  # Output: 1.5
+
+#Subtraction (-) subtracts the second number from the first.
+print('Integer Subtraction: ', int2 - int1)  # Output: 13
+print('Float Subtraction: ', float2 - float1)  # Output: 0.8999999999999999
+
+#Multiplication (*) multiplies two numbers together.
+print('Integer Multiplication: ', int1 * int2)  # Output: 300
+print('Float Multiplication: ', float1 * float2)  # Output: 0.36
+
+#Division (/) divides the first number by the second and returns a float.
+print('Integer Division: ', int2 / int1)  # Output: 2.0833333333333335
+print('Float Division: ', float2 / float1)  # Output: 4.0
+
+#When you add a float and an integer, the result will be converted to a float like this:
+print(int1 + int2 + float1 + float2)  # Output: 38.5
+
+#Modulo Operator (%) returns the remainder of a division operation.
+print('Integer Modulo: ', int2 % int1)  # Output: 1
+
+"""
+25 divided by 12 is 2 with a remainder of 1, so the result of 25 % 12 is 1.
+The modulo operator is often used to determine if a number is even or odd.
+"""
+
+#Floor Division (//) divides the first number by the second and returns the largest integer less than or equal to the result.
+print('Integer Floor Division: ', int2 // int1)  # Output: 2
+
+"""
+25 divided by 12 is 2.0833333333333335, and the largest integer less than or equal to 2.0833333333333335 is 2, so the result of 25 // 12 is 2.
+The floor division operator is often used to perform integer division.
+"""
+
+#Exponentiation Operator (**) raises the first number to the power of the second number.
+print('Integer Exponentiation: ', int1 ** 2)  # Output: 144
+
+"""
+12 raised to the power of 2 is 144, so the result of 12 ** 2 is 144.
+The exponentiation operator is often used to perform mathematical calculations involving powers.    
+"""
+
+del float  
+# Float() function converts an integer to float.
+int3 = 2003
+float_int3 = float(int3)
+print(float_int3)  # Output: 2003.0
+
+#Int()  function converts a flat to an interger.
+print(int(float2))  # Output: 1
+
+#Round() function rounds a float to the nearest integer.
+print(round(float2))  # Output: 1
+
+#Abs() function returns the absolute value of a number.
+print(abs(int1))  # Output: 12
+
+#Pow() function raises a number to the power of another.
+power = pow(2,5)
+print(power) # Output : 32
+
+"""
+2 times 2, 4
+4 times 2, 8
+8 times 2, 16
+16 times 2, 32
+"""
