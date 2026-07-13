@@ -149,6 +149,8 @@ print(introduction)  # Output: Hello, my name is Jay Sese
 intro = f"Hello, my name is {full_name} and I am {age} years old."
 print(intro)  # Output: Hello, my name is Jay Sese and I am 22 years old.
 
+print('---------------------------------------')
+
 """
 String Slicing
 
@@ -165,7 +167,177 @@ print(message[0:6])  # Python
 print(message[7:])  # is fun!
 print(message[::2])  # Pto sfn
 
+slicing = 'Trying Slicing'
+print(slicing[0:3]) #  Output: Try
+#The first index is zero meaning Letter T is on index 0
+#The second index is 3 meaning Letter y is on index 2
+#In second index, the letter on that index is not included
+
+print(slicing[7:13])  # Output: Slicing
+#Index 7 is the letter S
+#Index 13 is after the letter g, so it is not included in the output.
+#You can leave the second index empty to slice until the end of the string.
+
+print(slicing[7:])  # Output: Slicing
+#Even without the second index, it will slice until the end of the string.
+
+print(slicing[:6])  # Output: Trying
+#You can leave the first index empty to slice from the beginning of the string.
+
+print(slicing[::2])  # Output: Tyn lcn
+"""
+The step size is 2, so it takes every second character from the string.
+
+T r y i n g   S l i c i n g
+0 1 2 3 4 5 6 7 8 9 10 11 12 13
+
+Stepping through the string with a step size of 2, we get:
+Index 0: T
+Index 2: y
+Index 4: n
+Index 6:  
+Index 8: l
+Index 10: c
+Index 12: n
+"""
+
+print('---------------------------------------')
+
 #Getting the Length of a String
 #You can use the len() function to get the length of a string.
-text = "Hello, World!"
+text = 'Hello, World!'
 print(len(text))  # Output: 13
+
+#Working with the in operator
+#in Operator returns a boolean value (True or False) based on whether a substring exists within a string.
+print('Hello' in text)  # Output: True
+print('Python' in text)  # Output: False
+print('Python' not in text)  # Output: True
+print('World' not in text)  # Output: False
+
+print('Hotdog' in text)  # Output: False
+print('Hotdog' not in text)  # Output: True
+
+print('---------------------------------------')
+
+#Common String Methods
+#str.upper() returns a new string with all characters converted to uppercase.
+print(text.upper())  # Output: HELLO, WORLD!
+
+#str.isupper() returns True if all characters in the string are uppercase, otherwise False.
+print(text.isupper())  # Output: False
+upper_text = text.upper()
+print(upper_text.isupper())  # Output: True
+
+#str.lower() returns a new string with all characters converted to lowercase.
+print(text.lower())  # Output: hello, world!
+
+#str.islower() returns True if all characters in the string are lowercase, otherwise False.
+print(text.islower())  # Output: False
+lower_text = text.lower()
+print(lower_text.islower())  # Output: True
+
+print('--------------------------------------')
+
+#str.strip() returns a new string with leading and trailing whitespace removed.
+willstrip = '   Hello, World!   '
+stripped = willstrip.strip()
+print(stripped)  # Output: Hello, World! from '   Hello, World!   '
+
+#replace() returns a new string with all occurrences of a substring replaced with another substring.
+replaced_text = text.replace('World', 'Python')
+print(replaced_text)  # Output: Hello, Python!
+
+hi_python = replaced_text.replace('Hello', ' Hi')
+print(hi_python)  # Output:  Hi, Python!
+
+#split() returns a list of substrings by splitting the string at the specified delimiter.
+split_text = 'I-will-split-this-string'
+split_list = split_text.split('-')
+print(split_list)  # Output: ['I', 'will', 'split', 'this', 'string']
+
+split_slash = 'I/will/split/this/string'
+split_slash_list = split_slash.split('/')
+print(split_slash_list)  # Output: ['I', 'will', 'split', 'this', 'string']
+
+#join() returns a new string by joining the elements of an iterable (like a list) with a specified delimiter.
+will_join = ['I', 'will', 'join', 'this', 'list']
+joined_string = ' '.join(will_join)
+print(joined_string)  # Output: I will join this list
+
+slash_join = ['I', 'will', 'join', 'this', 'list']
+joined_slash_string = '/'.join(slash_join) 
+print(joined_slash_string)  # Output: I/will/join/this/list
+
+dash_join = ['I', 'will', 'join', 'this', 'list']
+joined_dash_string = '-'.join(dash_join)
+print(joined_dash_string)  # Output: I-will-join-this-list
+
+#str.startswith() returns True if the string starts with the specified prefix, otherwise False.
+print(text.startswith('Hello'))  # Output: True
+print(text.startswith('Hi'))  # Output: False
+
+print(text.startswith('H'))  # Output: True
+
+#str.endswith() returns True if the string ends with the specified suffix, otherwise False.
+print(text.endswith('World!'))  # Output: True
+print(text.endswith('Python!'))  # Output: False
+
+print(text.endswith('!')) # Output: True
+
+"""
+str.find() 
+
+It finds the first occurrence of the substring and returns its index.
+If the substring is not found, it returns -1.
+
+H e l l o ,   W o r l d !
+0 1 2 3 4 5 6 7 8 9 10 11 12
+The substring 'World' starts at index 7 in the string 'Hello, World!'.
+"""
+print(text.find('World'))  # Output: 7
+print(text.find('Python'))  # Output: -1: Meaning not found
+
+print(text.find('!'))  # Output: 12: The first occurrence of '!' is at index 12
+
+#str.count() returns the number of occurrences of a substring in the string.
+count_text = 'Hello, World! Hello, Python!'
+print(count_text.count('Hello'))  # Output: 2
+print(count_text.count('World'))  # Output: 1
+print(count_text.count('Python'))  # Output: 1
+print(count_text.count('Java'))  # Output: 0: Meaning not found
+print(count_text.count('!'))  # Output: 2: The substring '!' appears twice in the string.
+print(count_text.count('l'))  # Output: 5: The substring 'l' appears five times in the string.
+
+#str.capitalize() returns a new string with the first character capitalized and the rest lowercased.
+capitalize_text = 'hello, world!'
+print(capitalize_text.capitalize())  # Output: Hello, world!
+
+#str.title() returns a new string with the first character of each word capitalized.
+title_text = 'hello, world! welcome to python.'
+print(title_text.title())  # Output: Hello, World! Welcome To Python.
+
+#str.isalpha() returns True if all characters in the string are alphabetic and there is at least one character, otherwise False.
+alpha_text = 'HelloWorld'
+print(alpha_text.isalpha())  # Output: True
+non_alpha_text = 'Hello World'
+print(non_alpha_text.isalpha())  # Output: False: Because of the space character
+numeric_text = '12345'
+print(numeric_text.isalpha())  # Output: False: Because of the numbers
+
+#str.isdigit() returns True if all characters in the string are digits and there is at least one character, otherwise False.
+digit_text = '12345'
+print(digit_text.isdigit())  # Output: True
+non_digit_text = '12345abc'
+print(non_digit_text.isdigit())  # Output: False: Because of the letters
+
+#str.maketrans() and str.translate() are used together to replace characters in a string based on a translation table.
+translation_table = str.maketrans('aeiou', '12345')
+print(translation_table)  # Output: {97: 49, 101: 50, 105: 51, 111: 52, 117: 53}
+
+tresult = 'aeiou'.translate(translation_table)
+print(tresult)  # Output: 12345
+
+table = str.maketrans('abc', '123')
+translated = 'abcabc'.translate(table)
+print(translated)  # Output: 123123
