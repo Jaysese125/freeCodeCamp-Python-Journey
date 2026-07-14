@@ -417,3 +417,113 @@ print(power) # Output : 32
 8 times 2, 16
 16 times 2, 32
 """
+
+"""
+Augmented Assignments
+Combines a binary operation in one step. It takes a variable,
+applies an operation to it with another value, and stores
+the result back into the same variable.
+"""
+
+#Addition assignment
+aug_add = 1
+aug_add += 11
+print(aug_add) #12
+
+#Subtraction assignment
+aug_sub = 25
+aug_sub -= 13
+print(aug_sub) #12
+
+#Multiplication assignment
+aug_multi = 3
+aug_multi *= 4
+print(aug_multi) #12
+
+#Division assignment
+aug_div = 25
+aug_div /= 5
+print(aug_div) #5.0
+
+#Floor Division assignment
+aug_floor = 25
+aug_floor //= 12
+print(aug_floor) #2
+ 
+"""
+25 divided by 12 is 2.0833333333333335, and the largest
+integer less than or equal to 2.0833333333333335 is 2, so
+the result of 25 // 12 is 2. The floor division operator is 
+often used to perform integer division.
+"""
+
+#Modulo assignment
+aug_mod = 25
+aug_mod %= 4
+print(aug_mod) #1
+
+"""
+25 divided by 4 is 6 with a remainder of 1, so the result
+of 25 % 4 is 1. The modulo operator is often used to
+determine if a number is even or odd.
+"""
+
+#Exponentiation assignment
+aug_exp = 5
+aug_exp **= 3
+print(aug_exp) #12
+
+"""
+There are other augmented assignment operators too
+like those for bitwise operators.
+They include &=, ^=, >>=, and <<=.
+"""
+
+"""
+Working with Function
+Functions are reusable pieces of code that take
+inputs(arguments) and returns an output. To call a function,
+you need to reference the function name followed by a set of
+parenthesis.
+"""
+
+#Defining a function
+
+def getsum(num1, num2):
+    return num1 + num2
+sum = getsum(12,25) #function call
+print(sum) #37
+
+#If a function does not explicitly return a value
+# then the default return value is None:
+
+def greet():
+    print('hello')
+hello = greet() # hello
+print(hello) # None
+
+def hi(greeting): 
+        #greeting is called a parameter. (The Blueprint)
+        # Think of it as a temporary placeholder
+        # variable that only exists inside this function.
+    return greeting 
+hi_greeting = hi('hi') 
+                    #The string 'hi' is the actual argument.(The Value)
+                    #When you call hi('hi'), Python instantly assigns that argument to the parameter (greeting = 'hi').
+print(hi_greeting)
+#The function returns 'hi', and your variable hi_greeting successfully catches it so you can print it later.
+
+#You can also supply default values to parameters like this:
+def get_sum(num_1, num_2=2): #I declared the second parameter as 2 already
+    return num_1 + num_2
+result = get_sum(3) 
+print(result) # 5
+#default parameters must always come last in the function definition.
+
+#If you call the function without the correct number of 
+#arguments, you will get a TypeError:
+def calculate_sum(a, b):
+    print(a + b)
+calculate_sum()
+# TypeError: calculate_sum() missing 2 required positional\
+# arguments: 'a' and 'b'
