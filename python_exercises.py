@@ -520,10 +520,135 @@ result = get_sum(3)
 print(result) # 5
 #default parameters must always come last in the function definition.
 
-#If you call the function without the correct number of 
-#arguments, you will get a TypeError:
+"""
+If you call the function without the correct number of 
+arguments, you will get a TypeError:
+
 def calculate_sum(a, b):
     print(a + b)
 calculate_sum()
-# TypeError: calculate_sum() missing 2 required positional\
-# arguments: 'a' and 'b'
+
+TypeError: calculate_sum() missing 2 required positional
+arguments: 'a' and 'b'
+"""
+
+print('-------------------------------')
+
+#Common Built-in Functions
+
+#input() Function: This is used to prompt the user for some input:
+input_name = input('What is your name?') # User Types Jay and presses Enter
+print('Hello', input_name) # Hello Jay
+
+#int() Function: This is used to convert a number, boolean, or a numeric string into an integer:
+print(int(3.14)) # from float convert into int = 3
+print(int('12')) # from string convert into int = 12
+print(int(True)) # from boolean convert into int = 1
+print(int(False)) # from boolean convert into int = 2
+
+#Scope in Python
+
+#Local Scope
+#when a variable declared inside a function or class can only be accessed
+#within that function or class
+def local_scope():
+    local_num = 10
+    print(local_num)
+
+#Enclosing Scope
+#when a function that's nested inside another function can access the variables
+#of the function it's nested within.
+def outer_scope():
+    outer_msg = 'I\'m on the outer scope'
+    def inner_scope():
+        print(outer_msg)
+    inner_scope # Called the function inside the function named outer scope
+print(outer_scope()) # I'm on the outer scope
+    
+#Global Scope
+#refers to variables that are declared outside any functions or classes which
+#can be accessed from anywhere in the program.
+tax = 0.25
+def get_total(subtotal): #subtotal is parameter
+    total = subtotal + (subtotal * tax)
+    return total
+print (get_total(100)) #125.0 , 100 is the argument for subtotal parameter
+
+#Built in Scope
+#Reserved names in Python for predefined functions, modules, keywords, and objects.
+print(str(45)) # '45' str() makes the value a string
+print(type(3.14)) # <class 'float'> type() shows what type of data is in the value
+print(isinstance(3, str)) # False isinstance() checks the the first argument type using the second argument
+
+#Comparison Operators
+
+#Equal (==): Checks if two values are equal:
+print(12 == 25) # False
+
+#Not equal (!=): Checks if two values are not equal:
+print(12 != 25) # True
+
+#Strictly greater than (>): Checks if one value is greater than another:
+print(12 > 25) # False
+
+#Strictly less than (<): Checks if one value is less than another:
+print(12 < 25) # True
+
+#Greater than or equal (>=): Checks if one value is greater than or equal to another:
+print(12 >= 25) # False
+
+#Less than or equal (<=): Checks if one value is less than or equal to another:
+print(12 <= 25) # True
+
+print('-------------------------------')
+
+#Working with if, elif and else statements
+
+#if statements: These are conditions used to determine if something is true or not.
+#if the condition evaluates to True, then that block of code will run.
+if age >= 18:
+    print('You are an adult') # You are an adult
+
+#elif clause: These are conditions that come after an if statement. An elif clause
+#runs only if all previous conditions evaluate to False and its own condition 
+#evaluates to True.
+elif_age = 22
+if elif_age >= 18:
+    print('You are an adult') # You are an adult
+elif elif_age >= 13:
+    print('You are a teenager') # You are a teenager
+
+#else clause: This will run if no other conditions evaluate to True.
+else_age = 22
+if else_age >= 18:
+    print('You are an adult') # You are an adult
+elif else_age >= 13:
+    print('You are a teenager') # You are a teenager
+else:
+    print('You are a child') # You are a child
+
+#You can also use nested if statements like this:
+is_citizen = True
+citizen_age = 22
+
+if is_citizen:
+    if citizen_age >= 18:
+        print('You are eligible to vote') # You are eligibe to vote
+else:
+    print('You are not eligible to vote')
+
+"""
+Truthy and Falsy Values
+Every value has an inherent boolean value, or a built-in sense of whether
+it should be treated as True or False in a logical context. Many values are
+considered truthy, that is, they evaluate to True in a logical context. Others
+are falsy, meaning they evaluate to False. Here are some examples of falsy values:
+
+None
+False
+Integer 0
+Float 0.0
+Empty strings ''
+
+Other values like non-zero numbers, and non-empty strings are truthy.
+"""
