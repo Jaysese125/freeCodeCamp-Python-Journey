@@ -743,3 +743,62 @@ if not is_admin:
     print('Access denied for non-administrators.') # Access denied for non-administrators.
 else:
     print('Welcome, Administrator!')
+
+print('--------------------------------------------------')
+
+"""
+The list data type is an ordered sequence of elements that
+can be comprised of strings, numbers, or even other lists.
+Lists are mutable and use zero-based indexing, meaning that
+the first element of the list is at index zero.
+"""
+#Here is the basic syntax for a list:
+cities = ['Caloocan' , 'Quezon City', 'Manila']
+
+"""To access an element from the cities list, you can
+reference its index number in the sequence. Here is an
+example of accessing the first element of the cities list:"""
+cities[0] # 'Caloocan'
+
+"""Negative indexing is used to access elements starting
+from the end of the list instead of the beginning at index 0.
+To access the last element of any list, you can use -1 like
+this:"""
+cities[-1] # 'Manila
+
+#Another way to create a list is to use the list() constructor.
+#The list() constructor is used to convert an iterable into a
+#list like this:
+developer = 'Christian'
+list(developer) # ['C', 'h', 'r', 'i', 's', 't', 'i', 'a', 'n']
+
+#To get the total number of elements in a list, you can use
+#the len() function like this:
+numbers = [1,2,3,4,5]
+len(numbers) # 5
+
+#If you wanted to update a value at a particular index, you
+#can do something like this:
+programming_languages = ['Python', 'Java', 'C++', 'Rust']
+programming_languages[0] = 'JavaScript'
+print(programming_languages) # ['JavaScript', 'Java', 'C++', 'Rust']
+
+"""
+Since lists are mutable, you can update any element in the
+list as long as you pass in a valid index number. If you pass
+in an index (either positive or negative) that is out of
+bounds for the list, then you will receive an IndexError:
+"""
+
+programming_languages = ['Python', 'Java', 'C++', 'Rust']
+programming_languages[10] = 'JavaScript'
+
+programming_languages = ['Python', 'Java', 'C++', 'Rust']
+programming_languages[10] = 'JavaScript'
+
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+IndexError: list assignment index out of range
+"""
+
