@@ -537,8 +537,8 @@ print('-------------------------------')
 #Common Built-in Functions
 
 #input() Function: This is used to prompt the user for some input:
-input_name = input('What is your name?') # User Types Jay and presses Enter
-print('Hello', input_name) # Hello Jay
+#input_name = input('What is your name?') # User Types Jay and presses Enter
+#print('Hello', input_name) # Hello Jay
 
 #int() Function: This is used to convert a number, boolean, or a numeric string into an integer:
 print(int(3.14)) # from float convert into int = 3
@@ -652,3 +652,94 @@ Empty strings ''
 
 Other values like non-zero numbers, and non-empty strings are truthy.
 """
+
+print('-------------------------')
+
+"""
+Working with the bool() Function
+If you want to check whether a value is truthy or falsy,
+you can use the built-in bool() function. It explicitly
+converts a value to its boolean equivalent and returns True
+for truthy values and False for falsy values. Here are a few
+examples:
+"""
+
+print(bool(False)) # False
+print(bool(0))  # False
+print(bool('')) # False
+print(bool(True)) # True
+print(bool(1)) # True
+print(bool('Hello')) # True
+
+"""
+Boolean Operators and Short-circuiting
+Definition: These are special operators that allow you to
+combine multiple expressions to create more complex
+decision-making logic in your code. There are three Boolean
+operators in Python: and, or, and not.
+
+and Operator: This operator takes two operands and returns
+the first operand if it is falsy, otherwise, it returns the
+second operand. Both operands must be truthy for an
+expression to result in a truthy
+"""
+and_itstrue = True
+and_itstrue_value = 25
+print(and_itstrue and and_itstrue_value) #25
+
+#You can also use the and operator in conditionals like this:
+
+if and_itstrue and age >= 18:
+    print('You are eligible to vote') # You are eligible to vote
+else:
+    print('You are not eligible to vote')
+
+"""
+or Operator: This operator returns the first operand if it
+is truthy, otherwise, it returns the second operand. An or
+expression results in a truthy value if at least one operand
+is truthy. Here is an example:
+"""
+or_itsfalse = False
+print(and_itstrue_value or or_itsfalse) # 25
+
+#Just like with the and operator, you can use the or
+#operator in conditionals like this:\
+
+or_age = 19
+or_isstudent = True
+
+if or_age < 18 or or_isstudent:
+    print('You are eligible for a student discount')
+        # You are eligible for a student discount
+else:
+    print('You are not eligible for a student discount')
+
+"""
+Short-circuiting: The and and or operators are known as a
+short-circuit operators. Short-circuiting means Python checks
+values from left to right and stops as soon as it determines
+the final result.
+
+
+not Operator: This operator takes a single operand and inverts
+its boolean value. It converts truthy values to False and
+falsy values to True. Unlike the previous operators we looked
+at, not always returns True or False. Here are some examples:
+"""
+
+print(not '') # True, because empty string is falsy
+print(not 'Hello') # False, because non-empty string is truthy
+print(not 0) # True, because 0 is falsy
+print(not 1) # False, because 1 is truthy
+print(not False) # True, because False is falsy
+print(not True) # False, because True is truthy
+
+#Here is an example of the not operator in a conditional:
+
+is_admin = False
+
+if not is_admin:
+    print('Access denied for non-administrators.') # Access denied for non-administrators.
+else:
+    print('Welcome, Administrator!')
