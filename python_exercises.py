@@ -794,7 +794,7 @@ programming_languages = ['Python', 'Java', 'C++', 'Rust']
 programming_languages[10] = 'JavaScript'
 
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
-programming_languages[10] = 'JavaScript'
+#programming_languages[10] = 'JavaScript'
 
 """
 Traceback (most recent call last):
@@ -802,3 +802,135 @@ Traceback (most recent call last):
 IndexError: list assignment index out of range
 """
 
+#If you want to remove an element from a list you can use
+#the del keyword like this:
+
+developer = ['Jay Sese', 22, 'Python Developer']
+del developer[1] #index 1 is 22
+print(developer) # ['Jay Sese' , 'Python Developer']
+
+#Sometimes it is helpful to check if an element is inside
+#the list. To do that, you can use the in keyword like this:
+
+programming_languages = ['Python', 'Java', 'C++', 'Rust']
+'Rust' in programming_languages # True
+'JavaScript' in programming_languages # False
+
+#Sometimes it is common to have lists nested inside of other
+#lists like this:
+developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
+
+"""
+In this example, we have one nested list containing three
+popular programming languages. To access the nested list,
+you will need to access it using index 2 since lists are 
+zero based indexed:
+"""
+developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
+    #The nested list (the list inside the list) is index 2
+developer[2] # ['Python', 'Rust', 'C++']
+
+#Then to access the second language from that nested list,
+#you will need to access it using index 1 like this:
+developer[2][1] #Rust is index 1 on the nested list
+    #Access the nested list then, index the value
+
+"""
+Another common technique used with lists is unpacking values.
+
+Unpacking values from a list is a technique used to assign
+values from a list to new variables. Here is an example of
+unpacking a developer list into new variables called name,
+age and job.
+"""
+
+developer = ['Alice', 34, 'Rust Developer']
+name, age, job = developer
+
+print(name) # 'Alice'
+print(age) # 34
+print(job) # 'Rust Developer'
+
+#Putting lists values into a variable
+#Here, name has the value 'Alice', age has the value 34,
+#and job has the value 'Rust Developer'.
+
+#If you need to collect any remaining elements from a list,
+#you can use the asterisk (*) operator like this:
+
+developer = ['Alice', 34, 'Rust Developer']
+name, *rest = developer
+#You assigned Alice into variable name
+#Then you assigned THE REST OF THE VALUE IN THE DEVELOPER LIST into rest
+print(name) # 'Alice'
+print(rest) # [34, 'Rust Developer']
+
+"""
+In this example, name will still have the value 'Alice',
+and rest is a list of two items: the number 34 and the
+string 'Rust Developer'.
+
+If the numbers of variables on the left side of the
+assignment operator doesn't match the total numbers of items
+in the list, then you will receive a ValueError:
+"""
+developer = ['Alice', 34, 'Rust Developer']
+#name, age, job, city = developer
+#theres not enough value in the list
+#no value from the list to put as a city variable
+
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+ValueError: not enough values to unpack (expected 4, got 3)
+"""
+
+#The last concept we will look at is the slice operator (:).
+# Similar to strings, you can access portions of a list by
+# using the slice operator like this:
+
+desserts = ['Cake', 'Cookies', 'Ice Cream', 'Pie', 'Brownies']
+desserts[1:4] # ['Cookies', 'Ice Cream', 'Pie']
+# You slice the lists from index 1 cookies to index 4 brownies
+# but index 4 is not included so its just until index 3 which is pie
+
+"""
+In this example, the start index is 1 since that points to the
+ second item in the list. Then we use the slice operator
+ followed by an end index of 4, which includes everything up
+ to (but not including), the item at that index.
+
+Another thing you can do with the slice operator : is specify
+a step interval which determines how much to increment
+between the indices. Let's say you had a list of numbers like
+this:
+"""
+numbers = [1, 2, 3, 4, 5, 6]
+
+#If you wanted to extract a list of just even numbers, you
+# can use the slicing operator like this:
+
+numbers = [1, 2, 3, 4, 5, 6]
+numbers[1::2] # [2, 4, 6]
+
+#1 0  1
+#2 1  2 select
+#3 2  1
+#4 3  2 select
+#5 4  1 
+#6 5  2 select
+#stepping every 2 values start:stop:step
+
+#It's like stepping on slicing strings.
+
+"""
+The first even number is at index 1, so that will be the
+start index. Since we want to go through the end of the list,
+then we omit the end index. Lastly, we specify 2 for the
+optional step interval so it will only increment by 2 instead
+of the default 1.
+
+Lists are a useful and flexible data structure that you will
+use a lot in your Python programs. In the next lesson, you
+will learn about common methods that you can use with lists.
+"""
