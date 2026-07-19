@@ -791,9 +791,6 @@ bounds for the list, then you will receive an IndexError:
 """
 
 programming_languages = ['Python', 'Java', 'C++', 'Rust']
-programming_languages[10] = 'JavaScript'
-
-programming_languages = ['Python', 'Java', 'C++', 'Rust']
 #programming_languages[10] = 'JavaScript'
 
 """
@@ -934,3 +931,66 @@ Lists are a useful and flexible data structure that you will
 use a lot in your Python programs. In the next lesson, you
 will learn about common methods that you can use with lists.
 """
+print('---------------------------------------')
+
+"""
+What Are Some Common Methods Used for Lists?
+
+In the previous lesson, you were introduced to the list data
+type and learned how to access elements from a list as well
+as list slicing. In this lesson, you will continue to learn
+about lists and some common methods associated with them like
+append(), pop(), and sort().
+
+The first method we will look at is the append() method. This
+is used to add an item to the end of the list. Here is an
+example of using the append() method to add the number 6 to
+list of numbers:
+"""
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+print(numbers) # [1, 2, 3, 4, 5, 6]
+#We add 6 on the numbers list using append
+
+#If you want to add one list at the end of another, you
+#can also use the append() method like this:
+numbers = [1, 2, 3, 4, 5]
+even_numbers = [6, 8, 10]
+numbers.append(even_numbers)
+print(numbers) # [1, 2, 3, 4, 5, [6, 8, 10]]
+#We add even_numbers list on numbers list using append
+
+"""
+Notice how the entire even_numbers list is nested inside of
+the numbers list.
+
+But if you want to add all of the individual numbers from the
+even_numbers list at the end of the numbers list, then you
+can use the extend() method.
+
+The extend() method is similar to the append() method, but
+with extend() you can add multiple elements from one list to
+another. Here's an example of adding the numbers 6, 8, and
+10 from one list to the end of the numbers list:
+"""
+numbers = [1, 2, 3, 4, 5]
+even_numbers = [6, 8, 10]
+numbers.extend(even_numbers)
+print(numbers) # [1, 2, 3, 4, 5, 6, 8, 10]
+#We extend numbers list with even_numbers using extend
+
+"""
+As you can see, the nested list is gone and it's just a
+list of numbers. To insert an element at a specific index
+in a list, you can use the insert() method. This method
+accepts two arguments: the index where you wish to insert
+the new item and the item you want to insert.
+
+Here is an example of using the insert() method:
+"""
+numbers = [1, 2, 3, 4, 5]
+numbers.insert(2, 2.5)
+print(numbers)  # [1, 2, 2.5, 3, 4, 5]
+                #  0  1   2   3  4  5
+#we inserted 2.5 on index 2 in numbers list using insert
+
