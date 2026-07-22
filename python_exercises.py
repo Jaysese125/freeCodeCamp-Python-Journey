@@ -1033,4 +1033,68 @@ numbers = [1, 2, 3, 4, 5]
 numbers.clear()
 print(numbers) # [], we cleared the list so there are no more values in it
 
+"""
+The next method we will take a look at is the sort() method.
+This method is used to sort the elements in place. Here is
+an example of sorting a random list of numbers in place:
+"""
+numbers = [19, 2, 35, 1, 67, 41]
+numbers.sort()
+print(numbers) # [1, 2, 19, 35, 41, 67]
+#using sort we sorted the list from lower to higher value
 
+"""
+In contrast to the sort() method, there is the sorted()
+function which works for any iterable and returns a new
+sorted list instead of modifying the original list. For
+example:
+"""
+numbers = [19, 2, 35, 1, 67, 41]
+sorted_numbers = sorted(numbers)
+#instead of sorting the numbers lists we use sorted functoin
+#then we create a variable named sorted_numbers
+print(numbers) # [19, 2, 35, 1, 67, 41]
+print(sorted_numbers) # [1, 2, 19, 35, 41, 67]
+
+"""
+As a reminder, an iterable is a special type of object that 
+you can loop over, allowing you to access each item one at
+a time. You'll learn more about how loops work in Python in
+a future lesson.
+
+Both the sort() method and sorted() function accept optional
+key and reverse parameters. You will learn more about these
+optional parameters in a future lesson when you learn about
+tuples. You'll also learn more about other built-in
+functions like sorted() in future lessons.
+
+The next method we will take a look at is the reverse()
+method. This method, will reverse a list of elements in
+place like this:
+"""
+numbers = [6, 5, 4, 3, 2, 1]
+numbers.reverse()
+#it reverses the lists indexes
+print(numbers) # [1, 2, 3, 4, 5, 6]
+
+"""
+The last method we will take a look at is the index method.
+This is used to find the first index where an element can be
+found in a list. Here is an example of using the index method
+to find the language 'Java' in a programming_languages list:
+"""
+programming_languages = ['Rust', 'Java', 'Python', 'C++']
+programming_languages.index('Java') # 1
+#we used index method to found out the index of 'Java'
+
+#If the element cannot be found, then Python throws a ValueError:
+programming_languages = ['Rust', 'Java', 'Python', 'C++']
+#programming_languages.index('JavaScript')
+#There is no 'JavaScript' in programming_languages list
+#This will result into a ValueError
+
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'JavaScript' is not in list
+"""
