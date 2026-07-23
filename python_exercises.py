@@ -1098,3 +1098,151 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: 'JavaScript' is not in list
 """
+
+print('-------------------')
+
+"""
+What Are Tuples and How Do They Work?
+
+A tuple is a Python data type used to create an ordered
+sequence of values.
+"""
+
+#Tuples can contain a mixed set of data types like this:
+developer = ('Alice', 34 ,'Rust Developer')
+
+"""
+Tuples are similar to lists, but while lists are a mutable
+data type, tuples are immutable. This means that the elements
+in a tuple cannot be changed onced it's created.
+"""
+
+#If you try to update one of the items in the tuple, you will get a TypeError:
+programming_languages = ('Python', 'Java', 'C++', 'Rust')
+#programming_languages[0] = 'JavaScript'
+#We tried to changed the index 0 ('Python') with 'JavaScript' but it results to a TypeError because tuples are immutable
+ 
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: 'tuple' object does not support item assignment
+"""
+
+#To access an element from a tuple, you can use bracket notation and the index number:
+developer = ('Alice' , 34 , 'Rust Developer')
+developer[1] # 34
+#We accessed the index 1 in the tuple which is 34
+
+"""
+If you need to access elements starting from the end of a
+tuple, then you can use negative indexing. Here is an
+example of using a negative index to access the second to
+last element in a tuple:
+"""
+numbers = (1, 2, 3, 4, 5)
+numbers[-2] # 4
+#We used a negative index so it will count from the end of the tuple
+
+"""
+If you try to pass in an index number that exceeds or equals
+the length of the tuple, then you will receive an IndexError
+like this:
+"""
+numbers = (1, 2, 3, 4, 5)
+#numbers[7]
+#There is no index 7 so it will result into an IndexError
+
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+IndexError: list index out of range
+"""
+
+#Another way to create a tuple is by using the tuple() constructor like this:
+developer = 'Jessica'
+tuple(developer) # ('J', 'e', 's', 's', 'i', 'c', 'a')
+
+"""
+For the tuple() constructor, you can pass in different
+iterables like strings, lists and even other tuples.
+
+To check if an item is in a tuple, you can use
+the in keyword like this:
+"""
+programming_languages = ('Python', 'Java', 'C++', 'Rust')
+'Rust' in programming_languages # True
+#Theres a Rust element in the tuple so the result is true
+
+'JavaScript' in programming_languages # False
+#Theres no JavaScript element in the tuple so the result is false
+
+"""
+You can also unpack items from a tuple just like you did
+with lists:
+"""
+developer = ('Alice', 34, 'Rust Developer')
+name, age, job = developer
+#We assinged a variable on each index in the tuple
+#name variable as 'Alice' for its value 
+
+print(name) # 'Alice'
+print(age) # 34
+print(job) # 'Rust Developer'
+
+"""
+In this example, name has the value 'Alice', age has the
+value 34, and job has the value 'Rust Developer'.
+
+If you need to collect any remaining elements from a tuple,
+you can use the asterisk (*) operator like this:
+"""
+developer = ('Alice', 34, 'Rust Developer')
+name, *rest = developer
+#We make a variable rest that contains all the elements left in the tuple
+
+print(name) # 'Alice'
+print(rest) # [34, 'Rust Developer']
+
+"""
+Here, name has the value 'Alice', and rest is a list
+comprised of the number 34 and the string 'Rust Developer'.
+
+Just like with a list, you can use the slice operator on a
+tuple to extract a portion of it. Here is an example of
+extracting the items 'pie' and 'cookies' into a separate
+tuple:
+"""
+desserts = ('cake', 'pie', 'cookies', 'ice cream')
+desserts[1:3] # ('pie', 'cookies')
+#We only get the indexes from 1 to 3
+
+"""
+Remember that the first number represents the starting
+index for the extraction while the second number represents
+the ending index. But note that the item at the ending
+index is not included in the extracted tuple.
+
+If you need to remove an item from a tuple, that isn't
+possible because tuples are immutable. So this example,
+will produce an error:
+"""
+
+developer = ('Jane Doe', 23, 'Python Developer')
+#del developer[1]
+#You can't remove elements from the tuple because its an immutable data type
+
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: "tuple" object doesn't support item deletion
+"""
+
+"""
+So when might you use a tuple over a list?
+
+If you need a dynamic collection of elements where you can
+add, remove and update elements, then you should use a list.
+
+If you know that you are working with a fixed and immutable
+collection of data, then you should use a tuple.
+"""
