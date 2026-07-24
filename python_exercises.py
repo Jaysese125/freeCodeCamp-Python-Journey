@@ -1246,3 +1246,41 @@ add, remove and update elements, then you should use a list.
 If you know that you are working with a fixed and immutable
 collection of data, then you should use a tuple.
 """
+
+print ('---------------------')
+
+"""
+Common Methods for Tuples
+
+Count() - this method is used to determine how many times an
+item appears ina a tuple
+
+Here is an example of checking how many times the string
+Rust appears in a tuple named programming_languages:
+"""
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.count('Rust') # 2
+#There are two 'Rust' Values in programming languages tuple
+#When we used count('Rust') the result will be 2
+
+"""
+Since Rust appears twice in the tuple, the count() method
+returns the number 2. If the specified item in the count()
+function is not present at all in the tuple, then the return
+value is 0:
+"""
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.count('JavaScript') # 0
+#There's no 'JavaScript' so the output of the count is 0
+
+#If no arguments are passed into the count() function,
+#then Python raises a TypeError:
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.count()
+#There are no argument in the count() function so it will result in a TypeError
+
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: tuple.count() takes exactly one argument (0 given)
+"""
